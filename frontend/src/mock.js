@@ -74,7 +74,6 @@ export const doctors = [
       "Basal Implants",
       "Maxillofacial Surgery",
       "Complex Extractions",
-      "Bone Grafting",
       "Trauma Management",
     ],
   },
