@@ -75,8 +75,8 @@ export const doctors = [
     type: "in-house",
     role: "Resident Dental Surgeon",
     image:
-      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/9w3bs9gn_DB9CED41-F4EE-4CCF-9B45-8C5E2E010209.png",
-    imagePosition: "center 20%",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/5yjbv8yj_0A39CF68-648E-415A-B111-0F963916BCB0.png",
+    imagePosition: "center 25%",
     bio: "Dr. Himani Parashar Desai is a compassionate dental surgeon dedicated to preventive and restorative dentistry. She specializes in general dentistry, painless root canal treatments, and oral surgical procedures, ensuring every patient receives gentle, personalised, and evidence-based care.",
     specialties: [
       "General Dentistry",
