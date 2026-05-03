@@ -269,6 +269,51 @@ export const videos = [
   },
 ];
 
+export const instagramPosts = [
+  {
+    id: 1,
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+    caption: "Happy patients, brighter smiles ✨ #SSDCVapi",
+    likes: 248,
+  },
+  {
+    id: 2,
+    image:
+      "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80",
+    caption: "Behind the scenes with Dr. Parashar at work.",
+    likes: 312,
+  },
+  {
+    id: 3,
+    image:
+      "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=600&q=80",
+    caption: "Our clinic — where comfort meets care.",
+    likes: 189,
+  },
+  {
+    id: 4,
+    image:
+      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=600&q=80",
+    caption: "Painless RCT done in a single visit.",
+    likes: 274,
+  },
+  {
+    id: 5,
+    image:
+      "https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?auto=format&fit=crop&w=600&q=80",
+    caption: "A smile makeover that speaks for itself.",
+    likes: 421,
+  },
+  {
+    id: 6,
+    image:
+      "https://images.pexels.com/photos/19976565/pexels-photo-19976565.jpeg?auto=compress&cs=tinysrgb&w=600",
+    caption: "Gentle, family-first dentistry. #SmileWithUs",
+    likes: 196,
+  },
+];
+
 export const stats = [
   { value: "10+", label: "Years of Excellence" },
   { value: "5000+", label: "Happy Patients" },

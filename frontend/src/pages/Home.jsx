@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Phone, Star, CheckCircle2, Sparkles, Award, Heart, ShieldCheck } from "lucide-react";
-import { clinicInfo, doctors, services, technologies, testimonials, videos, stats } from "../mock";
+import { ArrowRight, Phone, Star, CheckCircle2, Sparkles, Award, Heart, ShieldCheck, Instagram, Heart as HeartIcon } from "lucide-react";
+import { clinicInfo, doctors, services, technologies, testimonials, videos, stats, instagramPosts } from "../mock";
 
 const Home = () => {
   return (
@@ -311,6 +311,62 @@ const Home = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* INSTAGRAM */}
+      <section className="py-20 md:py-28 px-6 md:px-12 bg-[#f7f9fc]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 text-xs tracking-[0.3em] text-[#1f3a6e] uppercase mb-4">
+              <Instagram size={14} /> Follow Us
+            </div>
+            <h2 className="font-serif text-4xl md:text-5xl text-[#0b1424] leading-tight">
+              <span className="italic text-[#1f3a6e]">@ssdcvapi</span> on Instagram
+            </h2>
+            <p className="mt-4 text-slate-600">
+              Smiles, stories and behind-the-scenes from our clinic.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+            {instagramPosts.map((post) => (
+              <a
+                key={post.id}
+                href="https://www.instagram.com/ssdcvapi/"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative aspect-square overflow-hidden rounded-xl bg-slate-200"
+              >
+                <img
+                  src={post.image}
+                  alt={post.caption}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-[#0b1424]/0 group-hover:bg-[#0b1424]/70 transition-colors duration-300 flex flex-col items-center justify-center text-white opacity-0 group-hover:opacity-100 px-4">
+                  <Instagram size={26} className="mb-3" />
+                  <p className="text-xs md:text-sm text-center leading-snug line-clamp-3">
+                    {post.caption}
+                  </p>
+                  <div className="mt-3 flex items-center gap-1.5 text-xs text-white/90">
+                    <HeartIcon size={12} className="fill-white" />
+                    {post.likes}
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <a
+              href="https://www.instagram.com/ssdcvapi/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 bg-[#0b1424] text-white px-7 py-3.5 rounded-full hover:bg-[#1f3a6e] transition-colors"
+            >
+              <Instagram size={16} /> Follow @ssdcvapi
+            </a>
           </div>
         </div>
       </section>
