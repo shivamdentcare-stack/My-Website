@@ -41,7 +41,7 @@ const About = () => {
       </section>
 
       <section className="py-16 px-6 md:px-12 bg-[#0b1424] text-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
               <div className="font-serif text-4xl md:text-5xl text-[#7fb3ff]">{s.value}</div>

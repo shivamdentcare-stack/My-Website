@@ -316,9 +316,8 @@ export const instagramPosts = [
 ];
 
 export const stats = [
-  { value: "10+", label: "Years of Excellence" },
-  { value: "5000+", label: "Happy Patients" },
-  { value: "800+", label: "Implants Placed" },
+  { value: "5+", label: "Years of Excellence" },
+  { value: "3000+", label: "Happy Patients" },
   { value: "15+", label: "Dental Specialties" },
 ];
 
