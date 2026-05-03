@@ -252,6 +252,15 @@ const Home = () => {
             <h2 className="font-serif text-4xl md:text-5xl text-[#0b1424]">
               Our patients, and their smiles speak for themselves
             </h2>
+            <div className="mt-6 inline-flex items-center gap-3 bg-white border border-slate-200 rounded-full px-5 py-2.5 shadow-sm">
+              <div className="flex gap-0.5">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} size={16} className="fill-amber-400 text-amber-400" />
+                ))}
+              </div>
+              <span className="font-semibold text-[#0b1424]">4.9</span>
+              <span className="text-sm text-slate-500">based on 73+ patient reviews</span>
+            </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {testimonials.map((t) => (
@@ -264,13 +273,29 @@ const Home = () => {
                     <Star key={i} size={14} className="fill-amber-400 text-amber-400" />
                   ))}
                 </div>
-                <p className="text-sm text-slate-700 leading-relaxed">“{t.quote}”</p>
+                <p className="text-sm text-slate-700 leading-relaxed">{t.quote}</p>
                 <div className="mt-5 pt-4 border-t border-slate-100">
                   <div className="font-medium text-[#0b1424]">{t.name}</div>
                   <div className="text-xs text-slate-500">{t.role}</div>
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-12 text-center">
+            <a
+              href="https://www.google.com/maps/search/Shivam+Speciality+Dental+Care+Vapi"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-3 bg-white border border-slate-200 hover:border-[#1f3a6e] hover:shadow-md text-[#0b1424] px-7 py-3.5 rounded-full transition-all"
+            >
+              <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true">
+                <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/>
+                <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/>
+                <path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z"/>
+                <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7C13.42 14.62 18.27 10.75 24 10.75z"/>
+              </svg>
+              Read all reviews on Google
+            </a>
           </div>
         </div>
       </section>

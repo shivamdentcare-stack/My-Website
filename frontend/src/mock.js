@@ -27,7 +27,7 @@ export const doctors = [
     qualification: "MDS, Prosthodontist & Implantologist",
     experience: "10 Years of Experience",
     image:
-      "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=900&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/jk6oaeut_A6BE4236-4042-4F26-9B0D-78E365B3AF32.png",
     bio: "Dr. Parashar Kirtibhai Desai is an award-winning prosthodontist and implantologist based in Vapi. With a Master's in Dental Surgery (Prosthodontics) and over a decade of clinical experience, he specializes in dental implants and digital smile designing. He combines artistry with the latest evidence-based techniques to deliver natural, long-lasting results.",
     specialties: [
       "Dental Implants",
@@ -43,7 +43,7 @@ export const doctors = [
     qualification: "BDS, Dental Surgeon",
     experience: "6 Years of Experience",
     image:
-      "https://images.pexels.com/photos/5622004/pexels-photo-5622004.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/9w3bs9gn_DB9CED41-F4EE-4CCF-9B45-8C5E2E010209.png",
     bio: "Dr. Himani Parashar Desai is a compassionate dental surgeon dedicated to preventive and restorative dentistry. She specializes in general dentistry, painless root canal treatments, and oral surgical procedures, ensuring every patient receives gentle, personalised, and evidence-based care.",
     specialties: [
       "General Dentistry",
@@ -222,34 +222,34 @@ export const technologies = [
 export const testimonials = [
   {
     id: 1,
-    name: "Riya Patel",
-    role: "Smile Makeover Patient",
+    name: "Tejal Patel",
+    role: "Verified Patient",
     quote:
-      "I had a complete smile makeover with Dr. Parashar — veneers and whitening. The results are stunning and look completely natural. Best decision I made!",
+      "Dr. Parashar is amazing — a very knowledgeable person for treatment as well as such a nice person. Highly recommend!",
     rating: 5,
   },
   {
     id: 2,
-    name: "Mahesh Shah",
-    role: "Implant Patient",
+    name: "Rudra Maheshwari",
+    role: "Verified Patient",
     quote:
-      "Got two implants done at SSDC. Painless procedure, very professional team and the clinic is spotlessly clean. Highly recommend Dr. Desai.",
+      "I had a toothache which was managed very well by Dr. Parashar. He calmly explained all the details of the procedure and gave great guidance — worth every penny. Happy with Shivam Speciality Dental Care staff and treatment. I recommend everyone.",
     rating: 5,
   },
   {
     id: 3,
-    name: "Anjali Mehta",
-    role: "Root Canal Patient",
+    name: "Priyanka",
+    role: "Verified Patient",
     quote:
-      "Dr. Himani is incredibly gentle. My root canal was done in a single visit with zero pain. Truly the best dental experience I've had.",
+      "The best dental care I have ever experienced! This is a great place to take care of your teeth. Dr. Himani did such a great job! Highly recommend if you're looking for a dentist in Vapi.",
     rating: 5,
   },
   {
     id: 4,
-    name: "Rakesh Joshi",
-    role: "Family Patient",
+    name: "Jayam Modi",
+    role: "Verified Patient",
     quote:
-      "Our entire family visits SSDC. From kids' cleanings to my mother's dentures, everything is handled with great care.",
+      "Dr. Parashar is an amazing doctor. Very patiently explains your situation and ensures that you are fully convinced of any treatment you are undergoing.",
     rating: 5,
   },
 ];
