@@ -65,7 +65,7 @@ const Home = () => {
       </section>
 
       {/* DOCTORS */}
-      {doctors.map((doc, idx) => (
+      {doctors.filter((d) => d.type === "in-house").map((doc, idx) => (
         <section
           key={doc.id}
           className={`py-20 md:py-28 px-6 md:px-12 ${idx % 2 === 0 ? "bg-white" : "bg-[#f7f9fc]"}`}

@@ -26,8 +26,11 @@ export const doctors = [
     name: "Dr. Parashar Kirtibhai Desai",
     qualification: "MDS, Prosthodontist & Implantologist",
     experience: "10 Years of Experience",
+    type: "in-house",
+    role: "Founder & Chief Dental Surgeon",
     image:
       "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/jk6oaeut_A6BE4236-4042-4F26-9B0D-78E365B3AF32.png",
+    imagePosition: "center 15%",
     bio: "Dr. Parashar Kirtibhai Desai is an award-winning prosthodontist and implantologist based in Vapi. With a Master's in Dental Surgery (Prosthodontics) and over a decade of clinical experience, he specializes in dental implants and digital smile designing. He combines artistry with the latest evidence-based techniques to deliver natural, long-lasting results.",
     specialties: [
       "Dental Implants",
@@ -42,6 +45,8 @@ export const doctors = [
     name: "Dr. Himani Parashar Desai",
     qualification: "BDS, Dental Surgeon",
     experience: "6 Years of Experience",
+    type: "in-house",
+    role: "Resident Dental Surgeon",
     image:
       "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/9w3bs9gn_DB9CED41-F4EE-4CCF-9B45-8C5E2E010209.png",
     imagePosition: "center 20%",
@@ -52,6 +57,44 @@ export const doctors = [
       "Oral Surgery",
       "Pediatric Dentistry",
       "Preventive Care",
+    ],
+  },
+  {
+    id: 3,
+    name: "Dr. Aroon K. Bengani",
+    qualification: "MDS, Oral & Maxillofacial Surgeon",
+    experience: "Visiting Specialist",
+    type: "visiting",
+    role: "Oral & Maxillofacial Surgeon · Basal Implantologist",
+    image:
+      "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80",
+    imagePosition: "center 20%",
+    bio: "Dr. Aroon K. Bengani is a highly experienced oral and maxillofacial surgeon and a certified basal implantologist. He visits SSDC for advanced surgical procedures including complex implant placements, full-arch basal implants, jaw surgeries and trauma management.",
+    specialties: [
+      "Basal Implants",
+      "Maxillofacial Surgery",
+      "Complex Extractions",
+      "Bone Grafting",
+      "Trauma Management",
+    ],
+  },
+  {
+    id: 4,
+    name: "Dr. Mrudul Vadiya",
+    qualification: "MDS, Orthodontist",
+    experience: "Visiting Specialist",
+    type: "visiting",
+    role: "Orthodontist & Dentofacial Orthopedist",
+    image:
+      "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=900&q=80",
+    imagePosition: "center 25%",
+    bio: "Dr. Mrudul Vadiya is a specialist orthodontist who visits SSDC to provide tailored orthodontic treatments — from traditional braces and ceramic brackets to clear aligners and advanced bite-correction protocols for both children and adults.",
+    specialties: [
+      "Metal & Ceramic Braces",
+      "Clear Aligners",
+      "Bite Correction",
+      "Pediatric Orthodontics",
+      "Dentofacial Orthopedics",
     ],
   },
 ];
@@ -327,6 +370,7 @@ export const navItems = [
   { id: "general", label: "General Dentistry", path: "/general-dentistry" },
   { id: "implant", label: "Implant Dentistry", path: "/implant-dentistry" },
   { id: "emergency", label: "Diagnostic & Emergency", path: "/emergency-care" },
+  { id: "team", label: "Our Team", path: "/our-team" },
   { id: "about", label: "About", path: "/about" },
   { id: "contact", label: "Contact", path: "/contact" },
 ];

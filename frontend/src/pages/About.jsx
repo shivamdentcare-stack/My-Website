@@ -57,7 +57,7 @@ const About = () => {
             <h2 className="font-serif text-3xl md:text-5xl text-[#0b1424]">Meet Our Doctors</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-10">
-            {doctors.map((d) => (
+            {doctors.filter((d) => d.type === "in-house").map((d) => (
               <div
                 key={d.id}
                 className="bg-white border border-slate-200 rounded-2xl overflow-hidden"
