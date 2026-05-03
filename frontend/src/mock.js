@@ -1,5 +1,32 @@
 // Mock data for Shivam Speciality Dental Care
 
+// WhatsApp helpers
+// Number format: country code + number, no +, spaces or dashes
+export const whatsappNumber = "919826668724";
+
+export const buildWhatsAppUrl = (message) =>
+  `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+export const defaultAppointmentMessage = `Hello Shivam Speciality Dental Care,
+
+I would like to book an appointment. Please share available slots.
+
+Name: 
+Service: 
+Preferred day/time: 
+
+Thank you!`;
+
+export const serviceEnquiryMessage = (serviceTitle) =>
+  `Hello Shivam Speciality Dental Care,
+
+I'm interested in ${serviceTitle}. Please share more details and available appointment slots.
+
+Name: 
+Preferred day/time: 
+
+Thank you!`;
+
 export const clinicInfo = {
   name: "Shivam Speciality Dental Care",
   shortName: "SSDC",

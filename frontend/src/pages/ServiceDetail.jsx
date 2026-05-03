@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import { ArrowRight, Check, ChevronLeft } from "lucide-react";
-import { services } from "../mock";
+import { ArrowRight, Check, ChevronLeft, MessageCircle } from "lucide-react";
+import { services, buildWhatsAppUrl, serviceEnquiryMessage } from "../mock";
 
 const ServiceDetail = () => {
   const { id } = useParams();
@@ -64,12 +64,14 @@ const ServiceDetail = () => {
               Talk to our specialists about {service.title.toLowerCase()} and get a personalised
               treatment plan.
             </p>
-            <Link
-              to="/contact"
+            <a
+              href={buildWhatsAppUrl(serviceEnquiryMessage(service.title))}
+              target="_blank"
+              rel="noreferrer"
               className="mt-6 inline-flex items-center gap-2 bg-[#0b1424] text-white px-6 py-3 rounded-full hover:bg-[#1f3a6e] transition-colors"
             >
-              Book Appointment <ArrowRight size={16} />
-            </Link>
+              <MessageCircle size={16} /> Book on WhatsApp <ArrowRight size={16} />
+            </a>
           </div>
         </div>
       </section>

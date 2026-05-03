@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
+import WhatsAppFab from "./WhatsAppFab";
 
 const Layout = ({ children }) => {
   return (
@@ -10,6 +11,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <Footer />
       </div>
+      <WhatsAppFab />
     </div>
   );
 };

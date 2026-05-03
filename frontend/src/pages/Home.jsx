@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Phone, Star, CheckCircle2, Sparkles, Award, Heart, ShieldCheck, Instagram, Heart as HeartIcon } from "lucide-react";
-import { clinicInfo, doctors, services, technologies, testimonials, videos, stats, instagramPosts } from "../mock";
+import { ArrowRight, Phone, Star, CheckCircle2, Sparkles, Award, Heart, ShieldCheck, Instagram, Heart as HeartIcon, MessageCircle } from "lucide-react";
+import { clinicInfo, doctors, services, technologies, testimonials, videos, stats, instagramPosts, buildWhatsAppUrl, defaultAppointmentMessage } from "../mock";
 
 const Home = () => {
   return (
@@ -23,15 +23,18 @@ const Home = () => {
                 {clinicInfo.legacy}
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
-                <Link
-                  to="/contact"
+                <a
+                  href={buildWhatsAppUrl(defaultAppointmentMessage)}
+                  target="_blank"
+                  rel="noreferrer"
                   className="group inline-flex items-center gap-2 bg-[#0b1424] text-white px-7 py-3.5 rounded-full hover:bg-[#1f3a6e] transition-colors"
                 >
-                  Book an Appointment
+                  <MessageCircle size={16} />
+                  Book on WhatsApp
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                </Link>
+                </a>
                 <a
-                  href={`tel:${clinicInfo.phone}`}
+                  href={`tel:+${clinicInfo.phone.replace(/\D/g, "")}`}
                   className="inline-flex items-center gap-2 border border-[#0b1424]/20 text-[#0b1424] px-7 py-3.5 rounded-full hover:border-[#0b1424] transition-colors"
                 >
                   <Phone size={16} /> Call Clinic
@@ -366,12 +369,14 @@ const Home = () => {
           <p className="mt-5 text-white/70">
             Book a consultation today — we'll design a treatment plan tailored just for you.
           </p>
-          <Link
-            to="/contact"
+          <a
+            href={buildWhatsAppUrl(defaultAppointmentMessage)}
+            target="_blank"
+            rel="noreferrer"
             className="mt-8 inline-flex items-center gap-2 bg-white text-[#0b1424] px-8 py-4 rounded-full hover:bg-[#7fb3ff] transition-colors"
           >
-            Book Appointment <ArrowRight size={16} />
-          </Link>
+            <MessageCircle size={16} /> Book on WhatsApp <ArrowRight size={16} />
+          </a>
         </div>
       </section>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Stethoscope, UserCheck } from "lucide-react";
-import { doctors } from "../mock";
+import { ArrowRight, Stethoscope, UserCheck, MessageCircle } from "lucide-react";
+import { doctors, buildWhatsAppUrl, defaultAppointmentMessage } from "../mock";
 
 const DoctorCard = ({ doc }) => (
   <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
@@ -113,12 +113,14 @@ const Team = () => {
             Visiting specialists attend SSDC on scheduled days. Book in advance to secure your
             preferred time.
           </p>
-          <Link
-            to="/contact"
+          <a
+            href={buildWhatsAppUrl(defaultAppointmentMessage)}
+            target="_blank"
+            rel="noreferrer"
             className="mt-8 inline-flex items-center gap-2 bg-white text-[#0b1424] px-7 py-3.5 rounded-full hover:bg-[#7fb3ff] transition-colors"
           >
-            Book a Consultation <ArrowRight size={16} />
-          </Link>
+            <MessageCircle size={16} /> Book on WhatsApp <ArrowRight size={16} />
+          </a>
         </div>
       </section>
     </div>

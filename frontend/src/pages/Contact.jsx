@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Phone, Mail, MapPin, Clock, Instagram, Send, CheckCircle2 } from "lucide-react";
-import { clinicInfo } from "../mock";
+import { Phone, Mail, MapPin, Clock, Instagram, Send, CheckCircle2, MessageCircle } from "lucide-react";
+import { clinicInfo, buildWhatsAppUrl } from "../mock";
 import { useToast } from "../hooks/use-toast";
 
 const Contact = () => {
@@ -25,14 +25,27 @@ const Contact = () => {
       });
       return;
     }
-    // Save locally as a mock submission
+    // Save locally as a backup
     const existing = JSON.parse(localStorage.getItem("ssdc_appointments") || "[]");
     existing.push({ ...form, at: new Date().toISOString() });
     localStorage.setItem("ssdc_appointments", JSON.stringify(existing));
+
+    // Build pre-filled WhatsApp message and open chat
+    const msg = `Hello Shivam Speciality Dental Care,
+
+I would like to book an appointment.
+
+Name: ${form.name}
+Phone: ${form.phone}${form.email ? `\nEmail: ${form.email}` : ""}${form.service ? `\nService: ${form.service}` : ""}${form.message ? `\nMessage: ${form.message}` : ""}
+
+Please share available slots. Thank you!`;
+
+    window.open(buildWhatsAppUrl(msg), "_blank");
+
     setSubmitted(true);
     toast({
-      title: "Appointment requested",
-      description: "We'll call you back within 24 hours.",
+      title: "Opening WhatsApp",
+      description: "Your appointment request is ready to send.",
     });
     setForm({ name: "", phone: "", email: "", service: "", message: "" });
   };
@@ -194,9 +207,9 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="mt-6 inline-flex items-center gap-2 bg-[#0b1424] text-white px-7 py-3.5 rounded-full hover:bg-[#1f3a6e] transition-colors"
+                className="mt-6 inline-flex items-center gap-2 bg-[#25D366] text-white px-7 py-3.5 rounded-full hover:bg-[#1ebe5a] transition-colors"
               >
-                Send Request <Send size={16} />
+                <MessageCircle size={16} /> Send via WhatsApp
               </button>
             </form>
           </div>
