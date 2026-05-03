@@ -35,7 +35,7 @@ export const clinicInfo = {
   hero: "Everyone deserves",
   heroAccent: "a Smile they Love",
   legacy:
-    "With a legacy of dedicated service, Shivam Speciality Dental Care is known for its team of highly skilled and experienced dentists and healthcare support staff providing comprehensive dental care in Vapi, Gujarat.",
+    "Your smile is our priority. Experience painless, modern and personalized dental care under expert hands.",
   address:
     "Shop No. 4, Nirmal Co-op. Housing Society, Nearby Haria Hospital, Chharwada Road, Rotary Circle, Industrial Estate, Vapi-396195, Gujarat",
   phone: "+91 98266 68724",
