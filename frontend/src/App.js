@@ -1,51 +1,67 @@
-import { useEffect } from "react";
-import "@/App.css";
+import React from "react";
+import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import ServiceDetail from "./pages/ServiceDetail";
+import CategoryPage from "./pages/CategoryPage";
+import { Toaster } from "./components/ui/toaster";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/service/:id" element={<ServiceDetail />} />
+            <Route
+              path="/cosmetic-dentistry"
+              element={
+                <CategoryPage
+                  title="Cosmetic Dentistry"
+                  subtitle="Smile makeovers, veneers, whitening and digital smile design — crafted to bring out your best smile."
+                  category="cosmetic"
+                />
+              }
+            />
+            <Route
+              path="/general-dentistry"
+              element={
+                <CategoryPage
+                  title="General Dentistry"
+                  subtitle="Routine procedures, root canals, dentures and braces to keep every smile healthy."
+                  category="general"
+                />
+              }
+            />
+            <Route
+              path="/surgical-dentistry"
+              element={
+                <CategoryPage
+                  title="Surgical Dentistry"
+                  subtitle="Implants, extractions and oral surgery performed with precision and care."
+                  category="surgical"
+                />
+              }
+            />
+            <Route
+              path="/emergency-care"
+              element={
+                <CategoryPage
+                  title="Diagnostic & Emergency Care"
+                  subtitle="Round-the-clock support for dental emergencies — pain relief, trauma management and more."
+                  category="general"
+                />
+              }
+            />
+          </Routes>
+        </Layout>
+        <Toaster />
       </BrowserRouter>
     </div>
   );
