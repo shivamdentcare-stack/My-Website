@@ -80,6 +80,7 @@ const Home = () => {
               <img
                 src={doc.image}
                 alt={doc.name}
+                style={{ objectPosition: doc.imagePosition || "center" }}
                 className="relative w-full h-[480px] object-cover rounded-2xl shadow-xl"
               />
             </div>

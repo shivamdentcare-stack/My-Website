@@ -65,6 +65,7 @@ const About = () => {
                 <img
                   src={d.image}
                   alt={d.name}
+                  style={{ objectPosition: d.imagePosition || "center" }}
                   className="w-full h-72 object-cover"
                 />
                 <div className="p-6">
