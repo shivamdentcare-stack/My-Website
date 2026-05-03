@@ -3,22 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Search } from "lucide-react";
 import { clinicInfo, navItems } from "../mock";
 
-const ToothLogo = ({ className = "h-9 w-9" }) => (
-  <svg
-    className={className}
-    viewBox="0 0 64 64"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    aria-hidden="true"
-  >
-    <path
-      d="M32 6c-7 0-13 3-17 3-3 0-5-1-5 4 0 8 4 13 6 22 1 5 1 11 3 16 1 4 4 6 6 6 3 0 4-3 5-7 1-5 1-9 2-9s1 4 2 9c1 4 2 7 5 7 2 0 5-2 6-6 2-5 2-11 3-16 2-9 6-14 6-22 0-5-2-4-5-4-4 0-10-3-17-3z"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
+const LOGO_URL =
+  "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/dew5mkih_SSDC%20Logo%20png%20%281%29.png";
 
 const Sidebar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -32,10 +18,7 @@ const Sidebar = () => {
       {/* Mobile top bar */}
       <div className="md:hidden fixed top-0 left-0 right-0 z-40 bg-[#0b1424] text-white flex items-center justify-between px-4 h-16 border-b border-white/10">
         <Link to="/" className="flex items-center gap-2">
-          <ToothLogo className="h-7 w-7 text-[#7fb3ff]" />
-          <span className="font-serif text-lg leading-tight">
-            Shivam <span className="block text-xs tracking-widest text-white/70">DENTAL CARE</span>
-          </span>
+          <img src={LOGO_URL} alt="SSDC" className="h-10 w-auto object-contain" />
         </Link>
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -57,15 +40,13 @@ const Sidebar = () => {
           <Link
             to="/"
             onClick={() => setMobileOpen(false)}
-            className="flex flex-col items-start gap-3 mb-12 group"
+            className="flex flex-col items-center gap-3 mb-10 group"
           >
-            <ToothLogo className="h-12 w-12 text-[#7fb3ff] group-hover:text-white transition-colors" />
-            <div>
-              <div className="font-serif text-2xl leading-tight tracking-wide">Shivam</div>
-              <div className="text-[11px] tracking-[0.3em] text-white/60 mt-1">
-                SPECIALITY DENTAL CARE
-              </div>
-            </div>
+            <img
+              src={LOGO_URL}
+              alt="Shivam Speciality Dental Care"
+              className="w-44 h-auto object-contain group-hover:opacity-90 transition-opacity"
+            />
           </Link>
 
           {/* Nav */}

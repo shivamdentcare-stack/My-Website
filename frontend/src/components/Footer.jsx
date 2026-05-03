@@ -8,10 +8,11 @@ const Footer = () => {
     <footer className="bg-[#0b1424] text-white/80 mt-24">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-1">
-          <div className="font-serif text-2xl text-white">{clinicInfo.shortName}</div>
-          <div className="text-[11px] tracking-[0.25em] text-white/50 mt-1 mb-6">
-            SPECIALITY DENTAL CARE
-          </div>
+          <img
+            src="https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/dew5mkih_SSDC%20Logo%20png%20%281%29.png"
+            alt="Shivam Speciality Dental Care"
+            className="w-40 h-auto object-contain mb-6"
+          />
           <p className="text-sm leading-relaxed text-white/60">
             Comprehensive dental care for the entire family — from routine check-ups to advanced
             implants and full smile makeovers.

@@ -275,46 +275,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* VIDEOS */}
-      <section className="py-20 md:py-28 px-6 md:px-12">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="text-xs tracking-[0.3em] text-[#1f3a6e] uppercase mb-4">
-              Stay In Touch
-            </div>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#0b1424] leading-tight">
-              Feel amazing about your oral health
-            </h2>
-            <p className="mt-4 text-slate-600">
-              Tips and recommendations from Shivam Speciality Dental Care.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {videos.map((v) => (
-              <div
-                key={v.id}
-                className="bg-[#f7f9fc] rounded-2xl overflow-hidden border border-slate-200"
-              >
-                <div className="aspect-video">
-                  <iframe
-                    className="w-full h-full"
-                    src={`https://www.youtube.com/embed/${v.id}`}
-                    title={v.title}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
-                <div className="p-6">
-                  <h4 className="font-serif text-xl text-[#0b1424]">{v.title}</h4>
-                  <p className="mt-2 text-sm text-slate-600">{v.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* INSTAGRAM */}
       <section className="py-20 md:py-28 px-6 md:px-12 bg-[#f7f9fc]">
         <div className="max-w-6xl mx-auto">
