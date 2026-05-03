@@ -118,7 +118,7 @@ export const services = [
       "Bone grafting & sinus lift",
       "Lifetime durable solutions",
     ],
-    category: "surgical",
+    category: "implant",
   },
   {
     id: "dentures",
@@ -182,7 +182,7 @@ export const services = [
       "Cyst & lesion removal",
       "Pre-prosthetic surgery",
     ],
-    category: "surgical",
+    category: "implant",
   },
 ];
 
@@ -325,7 +325,7 @@ export const navItems = [
   { id: "home", label: "Home", path: "/" },
   { id: "cosmetic", label: "Cosmetic Dentistry", path: "/cosmetic-dentistry" },
   { id: "general", label: "General Dentistry", path: "/general-dentistry" },
-  { id: "surgical", label: "Surgical Dentistry", path: "/surgical-dentistry" },
+  { id: "implant", label: "Implant Dentistry", path: "/implant-dentistry" },
   { id: "emergency", label: "Diagnostic & Emergency", path: "/emergency-care" },
   { id: "about", label: "About", path: "/about" },
   { id: "contact", label: "Contact", path: "/contact" },

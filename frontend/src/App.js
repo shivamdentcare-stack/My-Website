@@ -40,12 +40,12 @@ function App() {
               }
             />
             <Route
-              path="/surgical-dentistry"
+              path="/implant-dentistry"
               element={
                 <CategoryPage
-                  title="Surgical Dentistry"
-                  subtitle="Implants, extractions and oral surgery performed with precision and care."
-                  category="surgical"
+                  title="Implant Dentistry"
+                  subtitle="Permanent, natural-feeling tooth replacements — single implants, full-mouth rehabilitation, and advanced oral surgical procedures by Dr. Parashar Desai."
+                  category="implant"
                 />
               }
             />
