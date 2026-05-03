@@ -363,6 +363,42 @@ export const stats = [
   { value: "15+", label: "Dental Specialties" },
 ];
 
+export const blogs = [
+  {
+    id: 1,
+    title: "Why off-the-shelf teeth whitening doesn't work",
+    excerpt:
+      "Thinking of buying a whitening kit from your local pharmacy? Here's why professional whitening delivers better, safer results.",
+    image:
+      "https://images.unsplash.com/photo-1654373535457-383a0a4d00f9?auto=format&fit=crop&w=900&q=80",
+    category: "Cosmetic Dentistry",
+    date: "Coming soon",
+    readTime: "4 min read",
+  },
+  {
+    id: 2,
+    title: "Dental implants vs. dentures: which is right for you?",
+    excerpt:
+      "A side-by-side guide to help you understand the pros, cons and long-term costs of both tooth replacement options.",
+    image:
+      "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&fit=crop&w=900&q=80",
+    category: "Implants",
+    date: "Coming soon",
+    readTime: "6 min read",
+  },
+  {
+    id: 3,
+    title: "5 daily habits that protect your smile",
+    excerpt:
+      "Small, consistent habits that go far beyond brushing — practical tips from our doctors for a healthy mouth.",
+    image:
+      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80",
+    category: "Oral Health",
+    date: "Coming soon",
+    readTime: "3 min read",
+  },
+];
+
 export const navItems = [
   { id: "home", label: "Home", path: "/" },
   { id: "cosmetic", label: "Cosmetic Dentistry", path: "/cosmetic-dentistry" },
@@ -370,6 +406,7 @@ export const navItems = [
   { id: "implant", label: "Implant Dentistry", path: "/implant-dentistry" },
   { id: "emergency", label: "Diagnostic & Emergency", path: "/emergency-care" },
   { id: "team", label: "Our Team", path: "/our-team" },
+  { id: "blogs", label: "Blogs", path: "/blogs" },
   { id: "about", label: "About", path: "/about" },
   { id: "contact", label: "Contact", path: "/contact" },
 ];

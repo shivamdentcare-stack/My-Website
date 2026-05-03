@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Team from "./pages/Team";
+import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import ServiceDetail from "./pages/ServiceDetail";
 import CategoryPage from "./pages/CategoryPage";
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/our-team" element={<Team />} />
+            <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/service/:id" element={<ServiceDetail />} />
             <Route
