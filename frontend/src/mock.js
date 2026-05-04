@@ -230,9 +230,9 @@ export const services = [
       {
         label: "Ceramic Veneers · Gap Closure & Smile Correction",
         before:
-          "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/cyv1r2ao_IMG_7215.jpeg",
-        after:
           "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/nu1b93qn_IMG_7065.jpeg",
+        after:
+          "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/cyv1r2ao_IMG_7215.jpeg",
       },
     ],
     category: "cosmetic",
