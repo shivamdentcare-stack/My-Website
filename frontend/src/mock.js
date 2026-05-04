@@ -454,10 +454,7 @@ export const blogs = [
 
 export const navItems = [
   { id: "home", label: "Home", path: "/" },
-  { id: "cosmetic", label: "Cosmetic Dentistry", path: "/cosmetic-dentistry" },
-  { id: "general", label: "General Dentistry", path: "/general-dentistry" },
-  { id: "implant", label: "Implant Dentistry", path: "/implant-dentistry" },
-  { id: "emergency", label: "Diagnostic & Emergency", path: "/emergency-care" },
+  { id: "treatments", label: "Treatments", path: "/treatments" },
   { id: "team", label: "Our Team", path: "/our-team" },
   { id: "blogs", label: "Blogs", path: "/blogs" },
   { id: "about", label: "About", path: "/about" },

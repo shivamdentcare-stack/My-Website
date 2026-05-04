@@ -8,7 +8,7 @@ import Team from "./pages/Team";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import ServiceDetail from "./pages/ServiceDetail";
-import CategoryPage from "./pages/CategoryPage";
+import Treatments from "./pages/Treatments";
 import { Toaster } from "./components/ui/toaster";
 
 function App() {
@@ -23,46 +23,7 @@ function App() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/service/:id" element={<ServiceDetail />} />
-            <Route
-              path="/cosmetic-dentistry"
-              element={
-                <CategoryPage
-                  title="Cosmetic Dentistry"
-                  subtitle="Smile makeovers, veneers, whitening and digital smile design — crafted to bring out your best smile."
-                  category="cosmetic"
-                />
-              }
-            />
-            <Route
-              path="/general-dentistry"
-              element={
-                <CategoryPage
-                  title="General Dentistry"
-                  subtitle="Routine procedures, root canals, dentures and braces to keep every smile healthy."
-                  category="general"
-                />
-              }
-            />
-            <Route
-              path="/implant-dentistry"
-              element={
-                <CategoryPage
-                  title="Implant Dentistry"
-                  subtitle="Permanent, natural-feeling tooth replacements — single implants, full-mouth rehabilitation, and advanced oral surgical procedures by Dr. Parashar Desai."
-                  category="implant"
-                />
-              }
-            />
-            <Route
-              path="/emergency-care"
-              element={
-                <CategoryPage
-                  title="Diagnostic & Emergency Care"
-                  subtitle="Round-the-clock support for dental emergencies — pain relief, trauma management and more."
-                  category="general"
-                />
-              }
-            />
+            <Route path="/treatments" element={<Treatments />} />
           </Routes>
         </Layout>
         <Toaster />
