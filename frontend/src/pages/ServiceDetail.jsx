@@ -118,6 +118,11 @@ const ServiceDetail = () => {
                         <img
                           src={ba.before}
                           alt="Before treatment"
+                          style={{
+                            transform: ba.beforeZoom ? `scale(${ba.beforeZoom})` : undefined,
+                            objectPosition: ba.beforePos || "center",
+                            transformOrigin: ba.beforePos || "center",
+                          }}
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -130,6 +135,11 @@ const ServiceDetail = () => {
                         <img
                           src={ba.after}
                           alt="After treatment"
+                          style={{
+                            transform: ba.afterZoom ? `scale(${ba.afterZoom})` : undefined,
+                            objectPosition: ba.afterPos || "center",
+                            transformOrigin: ba.afterPos || "center",
+                          }}
                           className="w-full h-full object-cover"
                         />
                       </div>
