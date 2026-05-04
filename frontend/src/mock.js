@@ -42,8 +42,8 @@ export const clinicInfo = {
   email: "shivamdentcare@gmail.com",
   instagram: "@ssdcvapi",
   hours: [
-    { day: "Monday - Saturday", time: "10:00 AM - 1:30 PM, 4:30 PM - 8:30 PM" },
-    { day: "Sunday", time: "By Appointment Only" },
+    { day: "Monday - Saturday", time: "10:00 AM - 1:00 PM, 4:30 PM - 8:00 PM" },
+    { day: "Sunday", time: "Closed" },
   ],
 };
 
