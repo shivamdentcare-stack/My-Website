@@ -76,6 +76,78 @@ const ServiceDetail = () => {
         </div>
       </section>
 
+      {service.details && service.details.length > 0 && (
+        <section className="py-16 md:py-20 px-6 md:px-12 bg-white border-t border-slate-100">
+          <div className="max-w-4xl mx-auto space-y-12">
+            {service.details.map((d) => (
+              <div key={d.title}>
+                <div className="text-xs tracking-[0.3em] text-[#1f3a6e] uppercase mb-3">
+                  In focus
+                </div>
+                <h3 className="font-serif text-3xl md:text-4xl text-[#0b1424] leading-tight">
+                  {d.title}
+                </h3>
+                <p className="mt-5 text-slate-600 leading-relaxed text-[17px]">{d.body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {service.beforeAfter && service.beforeAfter.length > 0 && (
+        <section className="py-16 md:py-20 px-6 md:px-12 bg-[#f7f9fc]">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="text-xs tracking-[0.3em] text-[#1f3a6e] uppercase mb-4">
+                Real Results
+              </div>
+              <h2 className="font-serif text-3xl md:text-5xl text-[#0b1424]">
+                Before &amp; After
+              </h2>
+              <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
+                Actual patient outcomes at Shivam Speciality Dental Care. Results may vary from
+                person to person.
+              </p>
+            </div>
+            <div className="space-y-12">
+              {service.beforeAfter.map((ba, i) => (
+                <div key={i}>
+                  <div className="grid md:grid-cols-2 gap-4 md:gap-6">
+                    <div className="relative group rounded-2xl overflow-hidden border border-slate-200 bg-white">
+                      <div className="aspect-[4/3] overflow-hidden">
+                        <img
+                          src={ba.before}
+                          alt="Before treatment"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <span className="absolute top-4 left-4 bg-white/95 backdrop-blur text-[#0b1424] text-xs font-semibold tracking-[0.2em] uppercase px-3 py-1.5 rounded-full shadow">
+                        Before
+                      </span>
+                    </div>
+                    <div className="relative group rounded-2xl overflow-hidden border border-slate-200 bg-white">
+                      <div className="aspect-[4/3] overflow-hidden">
+                        <img
+                          src={ba.after}
+                          alt="After treatment"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <span className="absolute top-4 left-4 bg-[#1f3a6e] text-white text-xs font-semibold tracking-[0.2em] uppercase px-3 py-1.5 rounded-full shadow">
+                        After
+                      </span>
+                    </div>
+                  </div>
+                  {ba.label && (
+                    <p className="mt-4 text-center text-sm text-slate-600">{ba.label}</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="py-16 px-6 md:px-12 bg-[#f7f9fc]">
         <div className="max-w-6xl mx-auto">
           <h3 className="font-serif text-2xl md:text-3xl text-[#0b1424] mb-8">Other services</h3>

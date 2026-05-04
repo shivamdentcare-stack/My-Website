@@ -220,6 +220,21 @@ export const services = [
       "Digital Smile Design (DSD)",
       "Gum contouring",
     ],
+    details: [
+      {
+        title: "Ceramic Veneers",
+        body: "Ceramic veneers are thin, tooth-colored covers placed on the front of teeth to improve smile appearance. They help correct stains, gaps, chipped or uneven teeth and give a natural, brighter, well-shaped smile with long-lasting results.",
+      },
+    ],
+    beforeAfter: [
+      {
+        label: "Ceramic Veneers · Gap Closure & Smile Correction",
+        before:
+          "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/cyv1r2ao_IMG_7215.jpeg",
+        after:
+          "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/nu1b93qn_IMG_7065.jpeg",
+      },
+    ],
     category: "cosmetic",
   },
   {
