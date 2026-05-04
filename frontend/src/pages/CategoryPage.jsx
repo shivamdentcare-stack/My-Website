@@ -3,27 +3,26 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { services } from "../mock";
 
-const Treatments = () => {
+const CategoryPage = ({ title, subtitle, category }) => {
+  const list = services.filter((s) => s.category === category);
+
   return (
     <div>
       <section className="py-20 md:py-28 px-6 md:px-12 bg-[#f7f9fc]">
         <div className="max-w-5xl mx-auto text-center">
           <div className="text-xs tracking-[0.3em] text-[#1f3a6e] uppercase mb-4">
-            Our Services
+            Our Specialities
           </div>
           <h1 className="font-serif text-4xl md:text-6xl text-[#0b1424] leading-tight">
-            Treatments &amp; Services
+            {title}
           </h1>
-          <p className="mt-6 text-slate-600 text-lg">
-            Comprehensive dental care under one roof — from routine check-ups and smile makeovers
-            to advanced implant and surgical procedures.
-          </p>
+          <p className="mt-6 text-slate-600 text-lg">{subtitle}</p>
         </div>
       </section>
 
       <section className="py-16 md:py-20 px-6 md:px-12">
         <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((s) => (
+          {list.map((s) => (
             <Link
               key={s.id}
               to={`/service/${s.id}`}
@@ -47,9 +46,15 @@ const Treatments = () => {
             </Link>
           ))}
         </div>
+        {list.length === 0 && (
+          <div className="text-center text-slate-500 py-20">
+            More services in this category coming soon. Please get in touch for any specific
+            treatment.
+          </div>
+        )}
       </section>
     </div>
   );
 };
 
-export default Treatments;
+export default CategoryPage;
