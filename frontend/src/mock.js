@@ -234,6 +234,13 @@ export const services = [
         after:
           "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/cyv1r2ao_IMG_7215.jpeg",
       },
+      {
+        label: "Ceramic Veneers · Full Smile Makeover",
+        before:
+          "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/h4fqwwdy_5F3770B8-9FE0-42C6-ADDC-C6348B239B33.JPEG",
+        after:
+          "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/bbkpcptx_9A0AFF58-43AF-487E-9436-00CD02B7645A.JPEG",
+      },
     ],
     category: "cosmetic",
   },
