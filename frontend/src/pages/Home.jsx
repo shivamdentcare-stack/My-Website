@@ -319,32 +319,9 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-            {instagramPosts.map((post) => (
-              <a
-                key={post.id}
-                href="https://www.instagram.com/ssdcvapi/"
-                target="_blank"
-                rel="noreferrer"
-                className="group relative aspect-square overflow-hidden rounded-xl bg-slate-200"
-              >
-                <img
-                  src={post.image}
-                  alt={post.caption}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-[#0b1424]/0 group-hover:bg-[#0b1424]/70 transition-colors duration-300 flex flex-col items-center justify-center text-white opacity-0 group-hover:opacity-100 px-4">
-                  <Instagram size={26} className="mb-3" />
-                  <p className="text-xs md:text-sm text-center leading-snug line-clamp-3">
-                    {post.caption}
-                  </p>
-                  <div className="mt-3 flex items-center gap-1.5 text-xs text-white/90">
-                    <HeartIcon size={12} className="fill-white" />
-                    {post.likes}
-                  </div>
-                </div>
-              </a>
-            ))}
+          {/* Behold.so live Instagram feed */}
+          <div className="behold-wrap">
+            <behold-widget feed-id="NfkO6iCwq2u6981pHMam"></behold-widget>
           </div>
 
           <div className="mt-10 text-center">
