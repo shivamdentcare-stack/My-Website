@@ -143,7 +143,7 @@ const Home = () => {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service) => (
+            {services.filter((s) => s.featured).map((service) => (
               <Link
                 key={service.id}
                 to={`/service/${service.id}`}

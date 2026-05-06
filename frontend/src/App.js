@@ -38,7 +38,7 @@ function App() {
               element={
                 <CategoryPage
                   title="General Dentistry"
-                  subtitle="Routine procedures, root canals, dentures and braces to keep every smile healthy."
+                  subtitle="Routine procedures, fillings, root canals, cleanings and extractions to keep every smile healthy."
                   category="general"
                 />
               }
@@ -48,18 +48,28 @@ function App() {
               element={
                 <CategoryPage
                   title="Implant Dentistry"
-                  subtitle="Permanent, natural-feeling tooth replacements — single implants, full-mouth rehabilitation, and advanced oral surgical procedures by Dr. Parashar Desai."
+                  subtitle="Permanent, natural-feeling tooth replacements — single, multiple, full-mouth and basal implants by Dr. Parashar Desai."
                   category="implant"
                 />
               }
             />
             <Route
-              path="/emergency-care"
+              path="/dentures"
               element={
                 <CategoryPage
-                  title="Diagnostic & Emergency Care"
-                  subtitle="Round-the-clock support for dental emergencies — pain relief, trauma management and more."
-                  category="general"
+                  title="Dentures"
+                  subtitle="Comfortable, well-fitted complete, partial and implant-retained dentures — restoring chewing function and confidence."
+                  category="dentures"
+                />
+              }
+            />
+            <Route
+              path="/orthodontics"
+              element={
+                <CategoryPage
+                  title="Orthodontics (Braces Treatment)"
+                  subtitle="Straighten teeth and correct bites with traditional braces or virtually invisible clear aligners."
+                  category="ortho"
                 />
               }
             />
