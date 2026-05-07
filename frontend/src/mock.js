@@ -132,7 +132,7 @@ export const services = [
     title: "Dental Veneers",
     short: "Thin, tooth-coloured shells for a flawless smile.",
     image:
-      "https://images.unsplash.com/photo-1684607631747-045ecfeeb4c7?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/85qx2kpj_veneers.jpg",
     description:
       "Custom ceramic veneers correct stains, gaps, chips and uneven teeth — for a natural, brighter, well-shaped smile.",
     points: [
@@ -175,7 +175,7 @@ export const services = [
     title: "Full Ceramic (Metal-Free) Crowns",
     short: "Strong, lifelike crowns with no metal showing through.",
     image:
-      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/d2pk2ok8_Full%20Ceramic%20Crowns.jpeg",
     description:
       "All-ceramic, metal-free crowns that look identical to natural teeth and are biocompatible — the gold standard for front teeth restorations.",
     points: [
@@ -191,7 +191,7 @@ export const services = [
     title: "Digital Smile Designing",
     short: "Preview your new smile on screen before treatment begins.",
     image:
-      "https://images.unsplash.com/photo-1626878880028-0438b1403b3f?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/dys3zb9i_DIGITAL-SMILE-DESIGNING.jpg",
     description:
       "Digital Smile Design (DSD) lets us plan and visualise your final smile pixel-by-pixel using your facial photographs and 3D scans before any treatment starts.",
     points: [
@@ -207,7 +207,7 @@ export const services = [
     title: "Teeth Whitening (Bleaching)",
     short: "Brighten your smile by several shades, safely.",
     image:
-      "https://images.unsplash.com/photo-1654373535457-383a0a4d00f9?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/o6dw5fv3_Teeth%20whitening.webp",
     description:
       "Professional in-office and take-home bleaching systems that deliver visibly whiter teeth without damaging enamel.",
     points: [
@@ -224,7 +224,7 @@ export const services = [
     title: "Gum Contouring",
     short: "Reshape uneven or excessive gum line for a balanced smile.",
     image:
-      "https://images.unsplash.com/photo-1559591935-c6c92c6cb6e8?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/kzi096pv_Gum%20Contouring.jpg",
     description:
       "Laser-assisted gum reshaping to correct gummy smiles, uneven gum lines and improve overall smile aesthetics.",
     points: [
