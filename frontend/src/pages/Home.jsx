@@ -124,53 +124,35 @@ const Home = () => {
         </div>
       </section>
 
-      {/* SERVICES */}
-      <section className="py-20 md:py-28 px-6 md:px-12">
+      {/* INSTAGRAM */}
+      <section className="py-20 md:py-28 px-6 md:px-12 bg-[#f7f9fc]">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="text-xs tracking-[0.3em] text-[#1f3a6e] uppercase mb-4">
-              Our Services
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 text-xs tracking-[0.3em] text-[#1f3a6e] uppercase mb-4">
+              <Instagram size={14} /> Follow Us
             </div>
             <h2 className="font-serif text-4xl md:text-5xl text-[#0b1424] leading-tight">
-              Everything you need.
-              <br />
-              <span className="italic text-[#1f3a6e]">Nothing you don't.</span>
+              <span className="italic text-[#1f3a6e]">@ssdcvapi</span> on Instagram
             </h2>
-            <p className="mt-6 text-slate-600">
-              Your smile is unique — and so are our services. We offer best-in-class customised
-              treatment plans tailored to your needs.
+            <p className="mt-4 text-slate-600">
+              Smiles, stories and behind-the-scenes from our clinic.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.filter((s) => s.featured).map((service) => (
-              <Link
-                key={service.id}
-                to={`/service/${service.id}`}
-                className="group relative bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-serif text-xl text-[#0b1424] leading-snug">
-                    {service.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-slate-600">{service.short}</p>
-                  <div className="mt-4 inline-flex items-center gap-2 text-sm text-[#1f3a6e] font-medium">
-                    Learn more
-                    <ArrowRight
-                      size={14}
-                      className="group-hover:translate-x-1 transition-transform"
-                    />
-                  </div>
-                </div>
-              </Link>
-            ))}
+          {/* Behold.so live Instagram feed */}
+          <div className="behold-wrap">
+            <behold-widget feed-id="NfkO6iCwq2u6981pHMam"></behold-widget>
+          </div>
+
+          <div className="mt-10 text-center">
+            <a
+              href="https://www.instagram.com/ssdcvapi/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 bg-[#0b1424] text-white px-7 py-3.5 rounded-full hover:bg-[#1f3a6e] transition-colors"
+            >
+              <Instagram size={16} /> Follow @ssdcvapi
+            </a>
           </div>
         </div>
       </section>
@@ -304,38 +286,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* INSTAGRAM */}
-      <section className="py-20 md:py-28 px-6 md:px-12 bg-[#f7f9fc]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 text-xs tracking-[0.3em] text-[#1f3a6e] uppercase mb-4">
-              <Instagram size={14} /> Follow Us
-            </div>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#0b1424] leading-tight">
-              <span className="italic text-[#1f3a6e]">@ssdcvapi</span> on Instagram
-            </h2>
-            <p className="mt-4 text-slate-600">
-              Smiles, stories and behind-the-scenes from our clinic.
-            </p>
-          </div>
-
-          {/* Behold.so live Instagram feed */}
-          <div className="behold-wrap">
-            <behold-widget feed-id="NfkO6iCwq2u6981pHMam"></behold-widget>
-          </div>
-
-          <div className="mt-10 text-center">
-            <a
-              href="https://www.instagram.com/ssdcvapi/"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 bg-[#0b1424] text-white px-7 py-3.5 rounded-full hover:bg-[#1f3a6e] transition-colors"
-            >
-              <Instagram size={16} /> Follow @ssdcvapi
-            </a>
-          </div>
-        </div>
-      </section>
+      {/* INSTAGRAM (moved up — placeholder removed) */}
 
       {/* CTA */}
       <section className="py-20 px-6 md:px-12 bg-[#0b1424] text-white text-center">
