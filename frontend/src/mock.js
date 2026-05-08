@@ -94,8 +94,8 @@ export const doctors = [
     type: "visiting",
     role: "Oral & Maxillofacial Surgeon · Basal Implantologist",
     image:
-      "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80",
-    imagePosition: "center 20%",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/oykx0x0t_d041fa11-b1d0-43f2-b593-7536608523da.jpeg",
+    imagePosition: "center 25%",
     bio: "Dr. Aroon K. Bengani is a highly experienced oral and maxillofacial surgeon and a certified basal implantologist. He visits SSDC for advanced surgical procedures including complex implant placements, full-arch basal implants, jaw surgeries and trauma management.",
     specialties: [
       "Basal Implants",
