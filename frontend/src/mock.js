@@ -522,16 +522,6 @@ export const technologies = [
       "Up to 90% lower radiation than conventional X-rays with instant high-resolution imaging.",
   },
   {
-    title: "Painless Anesthesia",
-    description:
-      "Topical & vibration-assisted delivery makes injections virtually painless.",
-  },
-  {
-    title: "Sterilisation Protocol",
-    description:
-      "Class-B autoclave sterilisation with single-use disposables for every patient.",
-  },
-  {
     title: "Rotary Endodontics",
     description:
       "Single-visit root canals with NiTi rotary files for predictable outcomes.",

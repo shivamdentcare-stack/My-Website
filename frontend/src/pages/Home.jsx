@@ -203,9 +203,8 @@ const Home = () => {
               Care that's gentle, expert and personal
             </h2>
           </div>
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: Award, title: "Award-winning Care", desc: "Recognised expertise in implants & smile design." },
               { icon: ShieldCheck, title: "Sterile & Safe", desc: "Hospital-grade sterilisation for every procedure." },
               { icon: Heart, title: "Painless Dentistry", desc: "Modern anesthesia and gentle techniques." },
               { icon: CheckCircle2, title: "Transparent Pricing", desc: "Detailed treatment plans, no hidden costs." },
