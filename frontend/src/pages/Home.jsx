@@ -61,9 +61,6 @@ const Home = () => {
             <br />
             <span className="text-[#0b1424]">{clinicInfo.subTagline}</span>
           </h2>
-          <p className="mt-8 text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">
-            {clinicInfo.legacy}
-          </p>
         </div>
       </section>
 
