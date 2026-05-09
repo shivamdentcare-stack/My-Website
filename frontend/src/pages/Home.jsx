@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Phone, Star, CheckCircle2, Sparkles, Award, Heart, ShieldCheck, Instagram, Heart as HeartIcon, MessageCircle } from "lucide-react";
+import { ArrowRight, Phone, Star, CheckCircle2, Sparkles, Award, Heart, ShieldCheck, Instagram, Heart as HeartIcon, MessageCircle, ShieldPlus, Sparkle, Droplets } from "lucide-react";
 import { clinicInfo, doctors, services, technologies, testimonials, videos, stats, instagramPosts, buildWhatsAppUrl, defaultAppointmentMessage } from "../mock";
 
 const Home = () => {
@@ -188,6 +188,85 @@ const Home = () => {
                 <p className="mt-2 text-sm text-slate-600">{t.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* STERILIZATION PROTOCOL — featured highlight */}
+      <section className="relative py-20 md:py-28 px-6 md:px-12 bg-[#0b1424] text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.04] pointer-events-none" aria-hidden="true">
+          <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#7fb3ff] blur-3xl" />
+          <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-[#7fb3ff] blur-3xl" />
+        </div>
+
+        <div className="relative max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+            {/* Left — copy */}
+            <div>
+              <div className="inline-flex items-center gap-2 bg-[#7fb3ff]/15 border border-[#7fb3ff]/30 text-[#7fb3ff] text-xs tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-6">
+                <ShieldCheck size={14} />
+                Featured · Patient Safety
+              </div>
+              <h2 className="font-serif text-4xl md:text-5xl leading-tight">
+                Our Sterilization Protocol
+              </h2>
+              <p className="mt-6 text-white/80 leading-relaxed text-[17px]">
+                Your safety is non-negotiable. At Shivam Speciality Dental Care, we follow a strict
+                hospital-grade sterilization protocol on every patient — every single time. From
+                the moment instruments leave the operatory to the moment they return, every step
+                is documented, monitored and verified.
+              </p>
+              <p className="mt-4 text-white/70 leading-relaxed">
+                We're committed to the highest standards of infection control, because trust is
+                built one detail at a time. Take a look behind the scenes at how we keep our
+                clinic spotless and our patients safe.
+              </p>
+
+              <div className="mt-8 grid sm:grid-cols-2 gap-4">
+                {[
+                  { icon: ShieldPlus, label: "Class B Autoclave", desc: "Hospital-grade sterilization cycles" },
+                  { icon: Droplets, label: "Single-use Disposables", desc: "Fresh needles, gloves & barriers" },
+                  { icon: Sparkle, label: "Surface Disinfection", desc: "Between every patient" },
+                  { icon: ShieldCheck, label: "Tracked & Verified", desc: "Spore-tested & log-monitored" },
+                ].map((item) => (
+                  <div
+                    key={item.label}
+                    className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-xl p-4"
+                  >
+                    <div className="h-9 w-9 rounded-lg bg-[#7fb3ff]/15 flex items-center justify-center flex-shrink-0">
+                      <item.icon size={16} className="text-[#7fb3ff]" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-medium text-white">{item.label}</div>
+                      <div className="text-xs text-white/60 mt-0.5">{item.desc}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right — video */}
+            <div className="relative">
+              <div className="absolute -inset-3 bg-gradient-to-br from-[#7fb3ff]/30 to-[#1f3a6e]/0 rounded-3xl blur-xl" />
+              <div className="relative rounded-2xl overflow-hidden border border-white/15 shadow-2xl bg-black">
+                <video
+                  className="w-full h-full block"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  poster=""
+                >
+                  <source
+                    src="https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/foy953aq_Behind%20the%20scene.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <p className="mt-4 text-center text-xs tracking-[0.2em] uppercase text-white/50">
+                Behind the scenes · Infection control at SSDC
+              </p>
+            </div>
           </div>
         </div>
       </section>
