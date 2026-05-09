@@ -30,8 +30,8 @@ Thank you!`;
 export const clinicInfo = {
   name: "Shivam Speciality Dental Care",
   shortName: "SSDC",
-  tagline: "Best Dental Clinic in Vapi",
-  subTagline: "for Smile Makeovers & Everything Teeth",
+  tagline: "Vapi's Leading Dental Clinic",
+  subTagline: "for Smile Makeovers, Implants & Complete Dental Solutions",
   hero: "Everyone deserves",
   heroAccent: "a Smile they Love",
   legacy:
