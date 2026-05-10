@@ -242,7 +242,7 @@ export const services = [
     title: "Single Tooth Replacement",
     short: "Replace a missing tooth permanently with a dental implant.",
     image:
-      "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/k8kqznvd_IMG_0959.jpeg",
     description:
       "A titanium implant placed into the jawbone topped with a natural-looking ceramic crown — the closest replacement to a real tooth.",
     points: [
@@ -259,7 +259,7 @@ export const services = [
     title: "Multiple Tooth Replacement",
     short: "Implant-supported bridges for two or more missing teeth.",
     image:
-      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/zvwynp19_IMG_0960.jpeg",
     description:
       "Two or more implants supporting a bridge — a stable, long-term replacement for several adjacent missing teeth without grinding healthy ones.",
     points: [
@@ -275,7 +275,7 @@ export const services = [
     title: "Full Mouth Implants",
     short: "Restore a complete arch with All-on-4 / All-on-6 implants.",
     image:
-      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/vjnwev3r_IMG_0961.jpeg",
     description:
       "Full-arch fixed teeth supported on 4 or 6 implants — replace all teeth with a fixed, lifelike set in as little as one visit.",
     points: [
@@ -291,7 +291,7 @@ export const services = [
     title: "Basal Implants",
     short: "Immediate-loading implants for patients with bone loss.",
     image:
-      "https://images.unsplash.com/photo-1643660526741-094639fbe53a?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/5bfiesc4_IMG_0962.jpeg",
     description:
       "Advanced basal implant system that engages dense cortical bone — ideal for patients with low bone density, often avoiding the need for grafting.",
     points: [
@@ -377,7 +377,7 @@ export const services = [
     title: "Dental Aligners",
     short: "Clear, removable aligners — straighten teeth invisibly.",
     image:
-      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/s3xb85sx_IMG_0958.png",
     description:
       "Virtually invisible clear aligners that gradually move teeth into position — comfortable, removable and ideal for adults.",
     points: [
