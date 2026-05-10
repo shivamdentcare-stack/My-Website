@@ -681,7 +681,7 @@ export const blogs = [
     excerpt:
       "Beyond the political spotlight, West Bengal — and Kolkata in particular — holds an extraordinary place in the story of Indian dentistry.",
     image:
-      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/7rbqlv0m_3B77FFFA-6938-4DAB-A0FA-E36EC775AD13.png",
     category: "Dental Heritage",
     date: "Feb 2026",
     readTime: "4 min read",
