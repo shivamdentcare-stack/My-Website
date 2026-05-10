@@ -360,7 +360,7 @@ export const services = [
     title: "Metal & Ceramic Braces",
     short: "Time-tested fixed braces for all kinds of misalignment.",
     image:
-      "https://images.unsplash.com/photo-1605292530210-56b8be409237?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/m74mwiu7_IMG_0957.jpeg",
     description:
       "Conventional fixed braces in metal or tooth-coloured ceramic — the most reliable way to correct crowding, gaps, bite issues and severe misalignment.",
     points: [
@@ -395,7 +395,7 @@ export const services = [
     title: "Root Canal Treatment",
     short: "Painless, single-visit root canals using rotary endodontics.",
     image:
-      "https://images.unsplash.com/photo-1591283261401-c76eba2d369a?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/qw420nof_IMG_0963.jpeg",
     description:
       "Save your natural tooth with modern, painless rotary root canal procedures performed in single or two visits.",
     points: [
@@ -412,7 +412,7 @@ export const services = [
     title: "Tooth Filling (Light Cure Composites)",
     short: "Tooth-coloured fillings that blend in seamlessly.",
     image:
-      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/f4nkgqp2_IMG_0964.jpeg",
     description:
       "Modern light-cure composite fillings restore decayed or chipped teeth with a strong, tooth-coloured material that bonds invisibly.",
     points: [
@@ -428,7 +428,7 @@ export const services = [
     title: "Cleaning & Polishing",
     short: "Professional scaling to keep gums and teeth healthy.",
     image:
-      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/om9m9igs_IMG_0966.jpeg",
     description:
       "Ultrasonic scaling and polishing to remove plaque, tartar and surface stains — the foundation of long-term oral health.",
     points: [
@@ -444,7 +444,7 @@ export const services = [
     title: "Gum Surgeries",
     short: "Treatment for advanced gum disease and recession.",
     image:
-      "https://images.unsplash.com/photo-1559591935-c6c92c6cb6e8?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/0rrv5ost_IMG_0965.jpeg",
     description:
       "Surgical procedures including flap surgery, gum grafting and pocket reduction to treat advanced periodontal (gum) disease.",
     points: [
@@ -457,33 +457,18 @@ export const services = [
   },
   {
     id: "extraction",
-    title: "Teeth Removal",
-    short: "Painless removal of damaged or unsalvageable teeth.",
+    title: "Tooth Extractions",
+    short: "Painless simple & surgical extractions under local anesthesia.",
     image:
       "https://images.unsplash.com/photo-1643660526741-094639fbe53a?auto=format&fit=crop&w=1000&q=80",
     description:
-      "Simple, atraumatic extractions performed under modern local anesthesia for badly decayed, fractured or mobile teeth.",
+      "From simple, atraumatic removals of damaged teeth to surgical extractions of broken-down, impacted or root-stump teeth — all performed under modern local anesthesia with bone-preserving techniques and replacement planning.",
     points: [
       "Painless local anesthesia",
-      "Atraumatic technique",
-      "Same-day procedure",
-      "Replacement options discussed",
-    ],
-    category: "general",
-  },
-  {
-    id: "surgical-extraction",
-    title: "Surgical Extractions",
-    short: "For broken, impacted or root-stump teeth.",
-    image:
-      "https://images.unsplash.com/photo-1643660526741-094639fbe53a?auto=format&fit=crop&w=1000&q=80",
-    description:
-      "Surgical removal of broken-down, impacted or root-stump teeth requiring sectioning and bone preservation techniques.",
-    points: [
-      "Tooth sectioning",
-      "Bone-preserving technique",
-      "Suturing & socket care",
-      "Faster healing protocol",
+      "Atraumatic simple extractions",
+      "Surgical removal for broken / root-stump teeth",
+      "Bone-preserving technique with suturing",
+      "Same-day procedure & replacement options discussed",
     ],
     category: "general",
   },
@@ -778,8 +763,7 @@ export const navItems = [
       { label: "Tooth Filling (Light Cure)", path: "/service/filling" },
       { label: "Cleaning & Polishing", path: "/service/cleaning" },
       { label: "Gum Surgeries", path: "/service/gum-surgery" },
-      { label: "Teeth Removal", path: "/service/extraction" },
-      { label: "Surgical Extractions", path: "/service/surgical-extraction" },
+      { label: "Tooth Extractions", path: "/service/extraction" },
       { label: "Wisdom Tooth Surgery", path: "/service/wisdom-tooth" },
     ],
   },
