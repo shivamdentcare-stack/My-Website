@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Phone, Star, CheckCircle2, Sparkles, Award, Heart, ShieldCheck, Instagram, Heart as HeartIcon, MessageCircle, ShieldPlus, Sparkle, Droplets } from "lucide-react";
-import { clinicInfo, doctors, services, technologies, testimonials, videos, stats, instagramPosts, buildWhatsAppUrl, defaultAppointmentMessage } from "../mock";
+import { clinicInfo, doctors, services, technologies, testimonials, videos, stats, instagramPosts, buildWhatsAppUrl, defaultAppointmentMessage, brands, labPartner } from "../mock";
 
 const Home = () => {
   return (
@@ -265,6 +265,71 @@ const Home = () => {
               <p className="mt-4 text-center text-xs tracking-[0.2em] uppercase text-white/50">
                 Behind the scenes · Infection control at SSDC
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BRANDS / MATERIALS WE USE */}
+      <section className="py-20 md:py-24 px-6 md:px-12 bg-[#f7f9fc]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <div className="text-xs tracking-[0.3em] text-[#1f3a6e] uppercase mb-4">
+              Quality You Can Trust
+            </div>
+            <h2 className="font-serif text-4xl md:text-5xl text-[#0b1424] leading-tight">
+              Brands &amp; Materials We Use
+            </h2>
+            <p className="mt-5 text-slate-600 max-w-2xl mx-auto">
+              We work only with internationally trusted, certified dental brands — the same
+              materials chosen by leading dental clinics worldwide.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-5">
+            {brands.map((b) => (
+              <div
+                key={b.name}
+                className="group bg-white border border-slate-200 rounded-xl px-5 py-7 flex flex-col items-center justify-center text-center hover:shadow-lg hover:border-[#1f3a6e]/30 hover:-translate-y-0.5 transition-all duration-200 min-h-[110px]"
+              >
+                <div
+                  className={
+                    b.style === "elegant"
+                      ? "font-serif text-2xl text-[#0b1424] tracking-tight italic"
+                      : b.style === "bold"
+                      ? "font-sans text-2xl font-bold tracking-tight text-[#0b1424]"
+                      : "font-sans text-xl font-semibold tracking-wide text-[#0b1424]"
+                  }
+                >
+                  {b.name}
+                </div>
+                <div className="mt-1 text-[10px] tracking-[0.18em] uppercase text-slate-500">
+                  {b.subtitle}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Lab Partner — featured callout */}
+          <div className="mt-12">
+            <div className="relative bg-white border border-slate-200 rounded-2xl p-8 md:p-10 overflow-hidden">
+              <div className="absolute -top-12 -right-12 w-48 h-48 rounded-full bg-[#1f3a6e]/5 blur-3xl pointer-events-none" />
+              <div className="relative grid md:grid-cols-[auto_1fr] gap-6 md:gap-10 items-center">
+                <div className="flex flex-col items-center md:items-start">
+                  <div className="text-xs tracking-[0.3em] uppercase text-[#1f3a6e] mb-3">
+                    Lab Partner
+                  </div>
+                  <div className="font-serif text-3xl md:text-4xl italic text-[#0b1424] leading-tight">
+                    {labPartner.name}
+                  </div>
+                  <div className="mt-1 text-sm text-slate-500">
+                    {labPartner.location}
+                  </div>
+                </div>
+                <div className="md:border-l md:border-slate-200 md:pl-10">
+                  <p className="text-slate-600 leading-relaxed">{labPartner.description}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

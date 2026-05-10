@@ -629,6 +629,24 @@ export const stats = [
   { value: "15+", label: "Dental Specialties" },
 ];
 
+export const brands = [
+  { name: "3M", subtitle: "Restorative Materials", style: "bold" },
+  { name: "Ivoclar", subtitle: "Ceramics & Esthetics", style: "elegant" },
+  { name: "Shofu", subtitle: "Dental Materials", style: "clean" },
+  { name: "Coltene", subtitle: "Endodontics & Disinfection", style: "bold" },
+  { name: "NeoEndo", subtitle: "Endodontic Files & Sealers", style: "clean" },
+  { name: "Meta Biomed", subtitle: "Endodontic Materials", style: "elegant" },
+  { name: "Eighteeth", subtitle: "Endodontic Equipment", style: "clean" },
+  { name: "GC", subtitle: "Glass Ionomer & Composites", style: "bold" },
+];
+
+export const labPartner = {
+  name: "Illusion Dental Lab",
+  location: "Mumbai",
+  description:
+    "Our exclusive prosthetic laboratory partner — a leading dental lab known for its precision-crafted ceramics, zirconia restorations and digitally-designed prosthetics.",
+};
+
 export const blogs = [
   {
     id: 1,
