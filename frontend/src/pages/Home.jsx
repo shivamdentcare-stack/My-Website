@@ -290,7 +290,11 @@ const Home = () => {
             {brands.map((b) => (
               <div
                 key={b.name}
-                className="group bg-white border border-slate-200 rounded-xl px-5 py-7 flex flex-col items-center justify-center text-center hover:shadow-lg hover:border-[#1f3a6e]/30 hover:-translate-y-0.5 transition-all duration-200 min-h-[130px]"
+                className={`group border rounded-xl px-5 py-7 flex flex-col items-center justify-center text-center hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 min-h-[130px] ${
+                  b.darkBg
+                    ? "bg-[#0b1424] border-[#0b1424] hover:border-[#1f3a6e]"
+                    : "bg-white border-slate-200 hover:border-[#1f3a6e]/30"
+                }`}
               >
                 {b.logo ? (
                   <img
@@ -311,7 +315,11 @@ const Home = () => {
                     {b.name}
                   </div>
                 )}
-                <div className="mt-2 text-[10px] tracking-[0.18em] uppercase text-slate-500">
+                <div
+                  className={`mt-2 text-[10px] tracking-[0.18em] uppercase ${
+                    b.darkBg ? "text-white/60" : "text-slate-500"
+                  }`}
+                >
                   {b.subtitle}
                 </div>
               </div>

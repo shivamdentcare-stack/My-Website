@@ -630,9 +630,24 @@ export const stats = [
 ];
 
 export const brands = [
-  { name: "3M", subtitle: "Restorative Materials", style: "bold" },
-  { name: "Ivoclar", subtitle: "Ceramics & Esthetics", style: "elegant" },
-  { name: "Shofu", subtitle: "Dental Materials", style: "clean" },
+  {
+    name: "3M",
+    subtitle: "Restorative Materials",
+    logo:
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/ty1gx9rm_IMG_0942.png",
+  },
+  {
+    name: "Ivoclar",
+    subtitle: "Ceramics & Esthetics",
+    logo:
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/jz3kg0wb_IMG_0952.jpeg",
+  },
+  {
+    name: "Shofu",
+    subtitle: "Dental Materials",
+    logo:
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/7rl4fk89_IMG_0953.png",
+  },
   {
     name: "Coltene",
     subtitle: "Endodontics & Disinfection",
@@ -645,7 +660,13 @@ export const brands = [
     logo:
       "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/a7hc24l2_IMG_0945.png",
   },
-  { name: "Meta Biomed", subtitle: "Endodontic Materials", style: "elegant" },
+  {
+    name: "Meta Biomed",
+    subtitle: "Endodontic Materials",
+    logo:
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/s5z8qzuh_IMG_0951.png",
+    darkBg: true,
+  },
   {
     name: "Eighteeth",
     subtitle: "Endodontic Equipment",
