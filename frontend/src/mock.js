@@ -309,7 +309,7 @@ export const services = [
     title: "Complete Dentures",
     short: "Comfortable removable dentures for full arches.",
     image:
-      "https://images.unsplash.com/photo-1626878880028-0438b1403b3f?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/nl2x7vbb_IMG_0954.jpeg",
     description:
       "High-quality, well-fitted complete dentures restoring chewing function and natural facial appearance for fully edentulous patients.",
     points: [
@@ -326,7 +326,7 @@ export const services = [
     title: "Over Dentures",
     short: "Implant-retained dentures that snap into place securely.",
     image:
-      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/bp1vvi59_IMG_0955.jpeg",
     description:
       "Removable dentures that clip onto 2 to 4 dental implants — combining stability of implants with the convenience of removable prosthetics.",
     points: [
@@ -342,7 +342,7 @@ export const services = [
     title: "Cast Partial Dentures",
     short: "Strong, slim metal-framework dentures for partial gaps.",
     image:
-      "https://images.unsplash.com/photo-1559591935-c6c92c6cb6e8?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/z35esgva_IMG_0956.jpeg",
     description:
       "Cast metal-framework partial dentures that are slim, strong and clasp on to existing teeth — a durable mid-range option for partial tooth loss.",
     points: [
