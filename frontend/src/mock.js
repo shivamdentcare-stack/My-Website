@@ -633,16 +633,38 @@ export const brands = [
   { name: "3M", subtitle: "Restorative Materials", style: "bold" },
   { name: "Ivoclar", subtitle: "Ceramics & Esthetics", style: "elegant" },
   { name: "Shofu", subtitle: "Dental Materials", style: "clean" },
-  { name: "Coltene", subtitle: "Endodontics & Disinfection", style: "bold" },
-  { name: "NeoEndo", subtitle: "Endodontic Files & Sealers", style: "clean" },
+  {
+    name: "Coltene",
+    subtitle: "Endodontics & Disinfection",
+    logo:
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/wg83t3dg_IMG_0944.png",
+  },
+  {
+    name: "NeoEndo",
+    subtitle: "Endodontic Files & Sealers",
+    logo:
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/a7hc24l2_IMG_0945.png",
+  },
   { name: "Meta Biomed", subtitle: "Endodontic Materials", style: "elegant" },
-  { name: "Eighteeth", subtitle: "Endodontic Equipment", style: "clean" },
-  { name: "GC", subtitle: "Glass Ionomer & Composites", style: "bold" },
+  {
+    name: "Eighteeth",
+    subtitle: "Endodontic Equipment",
+    logo:
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/rsmfscwb_IMG_0946.png",
+  },
+  {
+    name: "GC",
+    subtitle: "Glass Ionomer & Composites",
+    logo:
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/2xpdw85f_IMG_0949.png",
+  },
 ];
 
 export const labPartner = {
   name: "Illusion Dental Lab",
   location: "Mumbai",
+  logo:
+    "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/35b1zs3j_IMG_0948.png",
   description:
     "Our exclusive prosthetic laboratory partner — a leading dental lab known for its precision-crafted ceramics, zirconia restorations and digitally-designed prosthetics.",
 };

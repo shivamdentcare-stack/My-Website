@@ -290,20 +290,28 @@ const Home = () => {
             {brands.map((b) => (
               <div
                 key={b.name}
-                className="group bg-white border border-slate-200 rounded-xl px-5 py-7 flex flex-col items-center justify-center text-center hover:shadow-lg hover:border-[#1f3a6e]/30 hover:-translate-y-0.5 transition-all duration-200 min-h-[110px]"
+                className="group bg-white border border-slate-200 rounded-xl px-5 py-7 flex flex-col items-center justify-center text-center hover:shadow-lg hover:border-[#1f3a6e]/30 hover:-translate-y-0.5 transition-all duration-200 min-h-[130px]"
               >
-                <div
-                  className={
-                    b.style === "elegant"
-                      ? "font-serif text-2xl text-[#0b1424] tracking-tight italic"
-                      : b.style === "bold"
-                      ? "font-sans text-2xl font-bold tracking-tight text-[#0b1424]"
-                      : "font-sans text-xl font-semibold tracking-wide text-[#0b1424]"
-                  }
-                >
-                  {b.name}
-                </div>
-                <div className="mt-1 text-[10px] tracking-[0.18em] uppercase text-slate-500">
+                {b.logo ? (
+                  <img
+                    src={b.logo}
+                    alt={b.name}
+                    className="h-12 md:h-14 w-auto max-w-[160px] object-contain transition-transform group-hover:scale-105"
+                  />
+                ) : (
+                  <div
+                    className={
+                      b.style === "elegant"
+                        ? "font-serif text-2xl text-[#0b1424] tracking-tight italic"
+                        : b.style === "bold"
+                        ? "font-sans text-2xl font-bold tracking-tight text-[#0b1424]"
+                        : "font-sans text-xl font-semibold tracking-wide text-[#0b1424]"
+                    }
+                  >
+                    {b.name}
+                  </div>
+                )}
+                <div className="mt-2 text-[10px] tracking-[0.18em] uppercase text-slate-500">
                   {b.subtitle}
                 </div>
               </div>
@@ -319,10 +327,18 @@ const Home = () => {
                   <div className="text-xs tracking-[0.3em] uppercase text-[#1f3a6e] mb-3">
                     Lab Partner
                   </div>
-                  <div className="font-serif text-3xl md:text-4xl italic text-[#0b1424] leading-tight">
-                    {labPartner.name}
-                  </div>
-                  <div className="mt-1 text-sm text-slate-500">
+                  {labPartner.logo ? (
+                    <img
+                      src={labPartner.logo}
+                      alt={labPartner.name}
+                      className="h-20 md:h-24 w-auto object-contain rounded-lg"
+                    />
+                  ) : (
+                    <div className="font-serif text-3xl md:text-4xl italic text-[#0b1424] leading-tight">
+                      {labPartner.name}
+                    </div>
+                  )}
+                  <div className="mt-3 text-sm text-slate-500">
                     {labPartner.location}
                   </div>
                 </div>
