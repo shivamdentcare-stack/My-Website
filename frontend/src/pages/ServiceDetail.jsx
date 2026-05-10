@@ -27,8 +27,31 @@ const ServiceDetail = () => {
   const related = services.filter((s) => s.id !== service.id).slice(0, 3);
   const faqs = serviceFaqs[service.id] || [];
 
+  const faqJsonLd =
+    faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: f.a,
+            },
+          })),
+        }
+      : null;
+
   return (
     <div>
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <section className="relative h-[55vh] md:h-[60vh] overflow-hidden">
         <img
           src={service.image}
