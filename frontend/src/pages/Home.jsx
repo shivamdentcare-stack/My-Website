@@ -224,10 +224,9 @@ const Home = () => {
 
               <div className="mt-8 grid sm:grid-cols-2 gap-4">
                 {[
-                  { icon: ShieldPlus, label: "Class B Autoclave", desc: "Hospital-grade sterilization cycles" },
+                  { icon: ShieldPlus, label: "Hospital Grade Autoclaving", desc: "Steam-pressure sterilization cycles" },
                   { icon: Droplets, label: "Single-use Disposables", desc: "Fresh needles, gloves & barriers" },
                   { icon: Sparkle, label: "Surface Disinfection", desc: "Between every patient" },
-                  { icon: ShieldCheck, label: "Tracked & Verified", desc: "Spore-tested & log-monitored" },
                 ].map((item) => (
                   <div
                     key={item.label}
