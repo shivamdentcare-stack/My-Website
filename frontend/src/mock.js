@@ -665,7 +665,6 @@ export const brands = [
     subtitle: "Endodontic Materials",
     logo:
       "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/s5z8qzuh_IMG_0951.png",
-    darkBg: true,
   },
   {
     name: "Eighteeth",
@@ -687,7 +686,7 @@ export const labPartner = {
   logo:
     "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/35b1zs3j_IMG_0948.png",
   description:
-    "Our exclusive prosthetic laboratory partner — a leading dental lab known for its precision-crafted ceramics, zirconia restorations and digitally-designed prosthetics.",
+    "Our prosthetic laboratory partner — a leading dental lab known for its precision-crafted ceramics, zirconia restorations and digitally-designed prosthetics.",
 };
 
 export const blogs = [
