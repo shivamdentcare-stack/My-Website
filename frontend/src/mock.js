@@ -112,8 +112,8 @@ export const doctors = [
     type: "visiting",
     role: "Orthodontist & Dentofacial Orthopedist",
     image:
-      "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=900&q=80",
-    imagePosition: "center 25%",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/a9c3g5ci_c6f7d0d3-dfdd-4ead-b6e9-84929be2edab.jpeg",
+    imagePosition: "center 20%",
     bio: "Dr. Mrudul Vadiya is a specialist orthodontist who visits SSDC to provide tailored orthodontic treatments — from traditional braces and ceramic brackets to clear aligners and advanced bite-correction protocols for both children and adults.",
     specialties: [
       "Metal & Ceramic Braces",
