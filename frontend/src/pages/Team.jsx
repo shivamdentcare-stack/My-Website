@@ -3,34 +3,42 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Stethoscope, UserCheck, MessageCircle } from "lucide-react";
 import { doctors, buildWhatsAppUrl, defaultAppointmentMessage } from "../mock";
 
-const DoctorCard = ({ doc }) => (
-  <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
-    <div className="aspect-[4/5] overflow-hidden bg-slate-100">
-      <img
-        src={doc.image}
-        alt={doc.name}
-        style={{ objectPosition: doc.imagePosition || "center" }}
-        className="w-full h-full object-cover"
-      />
-    </div>
-    <div className="p-6">
-      <h3 className="font-serif text-2xl text-[#0b1424] leading-tight">{doc.name}</h3>
-      <p className="text-[#1f3a6e] font-medium mt-1.5 text-sm">{doc.qualification}</p>
-      {doc.role && <p className="text-xs text-slate-500 mt-1">{doc.role}</p>}
-      <p className="mt-4 text-sm text-slate-600 leading-relaxed">{doc.bio}</p>
-      <div className="mt-5 flex flex-wrap gap-2">
-        {doc.specialties.map((s) => (
-          <span
-            key={s}
-            className="text-xs px-3 py-1.5 rounded-full bg-[#1f3a6e]/10 text-[#1f3a6e]"
-          >
-            {s}
-          </span>
-        ))}
+const DoctorCard = ({ doc, compact = false }) => {
+  const aspect = compact ? "aspect-[4/3]" : "aspect-[4/5]";
+  const titleSize = compact ? "text-xl" : "text-2xl";
+  const padding = compact ? "p-5" : "p-6";
+
+  return (
+    <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+      <div className={`${aspect} overflow-hidden bg-slate-100`}>
+        <img
+          src={doc.image}
+          alt={doc.name}
+          style={{ objectPosition: doc.imagePosition || "center" }}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className={padding}>
+        <h3 className={`font-serif ${titleSize} text-[#0b1424] leading-tight`}>{doc.name}</h3>
+        <p className="text-[#1f3a6e] font-medium mt-1.5 text-sm">{doc.qualification}</p>
+        {doc.role && <p className="text-xs text-slate-500 mt-1">{doc.role}</p>}
+        <p className={`mt-4 ${compact ? "text-[13px]" : "text-sm"} text-slate-600 leading-relaxed`}>
+          {doc.bio}
+        </p>
+        <div className="mt-5 flex flex-wrap gap-2">
+          {doc.specialties.map((s) => (
+            <span
+              key={s}
+              className={`${compact ? "text-[11px] px-2.5 py-1" : "text-xs px-3 py-1.5"} rounded-full bg-[#1f3a6e]/10 text-[#1f3a6e]`}
+            >
+              {s}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const Team = () => {
   const inHouse = doctors.filter((d) => d.type === "in-house");
@@ -95,9 +103,9 @@ const Team = () => {
             Renowned specialists who visit SSDC for advanced consultations and procedures —
             ensuring you get expert care without travelling out of Vapi.
           </p>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
             {visiting.map((doc) => (
-              <DoctorCard key={doc.id} doc={doc} />
+              <DoctorCard key={doc.id} doc={doc} compact />
             ))}
           </div>
         </div>
