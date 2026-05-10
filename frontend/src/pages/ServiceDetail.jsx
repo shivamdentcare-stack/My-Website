@@ -118,7 +118,7 @@ const ServiceDetail = () => {
             </div>
             <div className="space-y-12">
               {service.beforeAfter.map((ba, i) => (
-                <div key={i}>
+                <div key={ba.before || `ba-${i}`}>
                   <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                     <div className="relative group rounded-2xl overflow-hidden border border-slate-200 bg-white">
                       <div className="aspect-[4/3] overflow-hidden">
@@ -180,12 +180,12 @@ const ServiceDetail = () => {
               </p>
             </div>
             <Accordion type="single" collapsible className="w-full" data-testid="service-faqs">
-              {faqs.map((f, i) => (
+              {faqs.map((f) => (
                 <AccordionItem
-                  key={i}
-                  value={`faq-${i}`}
+                  key={f.q}
+                  value={`faq-${f.q.slice(0, 20)}`}
                   className="border-b border-slate-200"
-                  data-testid={`faq-item-${i}`}
+                  data-testid={`faq-item-${f.q.slice(0, 20)}`}
                 >
                   <AccordionTrigger className="text-left font-serif text-lg text-[#0b1424] hover:no-underline py-5">
                     {f.q}

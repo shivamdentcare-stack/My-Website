@@ -112,8 +112,8 @@ Please share available slots. Thank you!`;
                 </div>
                 <div>
                   <div className="font-medium text-[#0b1424]">Hours</div>
-                  {clinicInfo.hours.map((h, i) => (
-                    <p key={i} className="text-sm text-slate-600 mt-1">
+                  {clinicInfo.hours.map((h) => (
+                    <p key={h.day} className="text-sm text-slate-600 mt-1">
                       <span className="text-[#0b1424]">{h.day}</span> · {h.time}
                     </p>
                   ))}

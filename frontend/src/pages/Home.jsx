@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Phone, Star, CheckCircle2, Sparkles, Award, Heart, ShieldCheck, Instagram, Heart as HeartIcon, MessageCircle, ShieldPlus, Sparkle, Droplets } from "lucide-react";
 import { clinicInfo, doctors, services, technologies, testimonials, videos, stats, instagramPosts, buildWhatsAppUrl, defaultAppointmentMessage, brands, labPartner } from "../mock";
 
 const Home = () => {
+  const inHouseDoctors = useMemo(
+    () => doctors.filter((d) => d.type === "in-house"),
+    []
+  );
   return (
     <div className="bg-white">
       {/* HERO */}
@@ -65,7 +69,7 @@ const Home = () => {
       </section>
 
       {/* DOCTORS */}
-      {doctors.filter((d) => d.type === "in-house").map((doc, idx) => (
+      {inHouseDoctors.map((doc, idx) => (
         <section
           key={doc.id}
           className={`py-20 md:py-28 px-6 md:px-12 ${idx % 2 === 0 ? "bg-white" : "bg-[#f7f9fc]"}`}
@@ -403,8 +407,8 @@ const Home = () => {
             </h2>
             <div className="mt-6 inline-flex items-center gap-3 bg-white border border-slate-200 rounded-full px-5 py-2.5 shadow-sm">
               <div className="flex gap-0.5">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={16} className="fill-amber-400 text-amber-400" />
+                {["s1", "s2", "s3", "s4", "s5"].map((sid) => (
+                  <Star key={sid} size={16} className="fill-amber-400 text-amber-400" />
                 ))}
               </div>
               <span className="font-semibold text-[#0b1424]">4.9</span>
@@ -418,8 +422,8 @@ const Home = () => {
                 className="bg-white p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow"
               >
                 <div className="flex gap-0.5 mb-4">
-                  {Array.from({ length: t.rating }).map((_, i) => (
-                    <Star key={i} size={14} className="fill-amber-400 text-amber-400" />
+                  {Array.from({ length: t.rating }, (_, i) => `${t.id}-star-${i}`).map((sid) => (
+                    <Star key={sid} size={14} className="fill-amber-400 text-amber-400" />
                   ))}
                 </div>
                 <p className="text-sm text-slate-700 leading-relaxed">{t.quote}</p>

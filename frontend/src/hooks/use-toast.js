@@ -143,7 +143,10 @@ function useToast() {
         listeners.splice(index, 1)
       }
     };
-  }, [state])
+    // setState from useState is stable; listeners is module-scoped.
+    // Subscribe once on mount, unsubscribe on unmount.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return {
     ...state,

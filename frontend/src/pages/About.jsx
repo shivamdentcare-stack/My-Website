@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Award, Heart, ShieldCheck, Users } from "lucide-react";
 import { doctors, clinicInfo, stats } from "../mock";
 
 const About = () => {
+  const inHouseDoctors = useMemo(
+    () => doctors.filter((d) => d.type === "in-house"),
+    []
+  );
   return (
     <div>
       <section className="py-20 md:py-28 px-6 md:px-12 bg-[#f7f9fc]">
@@ -57,7 +61,7 @@ const About = () => {
             <h2 className="font-serif text-3xl md:text-5xl text-[#0b1424]">Meet Our Doctors</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-10">
-            {doctors.filter((d) => d.type === "in-house").map((d) => (
+            {inHouseDoctors.map((d) => (
               <div
                 key={d.id}
                 className="bg-white border border-slate-200 rounded-2xl overflow-hidden"

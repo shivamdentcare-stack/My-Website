@@ -73,8 +73,8 @@ const Footer = () => {
             Working Hours
           </h4>
           <ul className="space-y-3 text-sm">
-            {clinicInfo.hours.map((h, i) => (
-              <li key={i} className="flex gap-3">
+            {clinicInfo.hours.map((h) => (
+              <li key={h.day} className="flex gap-3">
                 <Clock size={16} className="flex-shrink-0 mt-0.5 text-[#7fb3ff]" />
                 <div>
                   <div className="text-white">{h.day}</div>

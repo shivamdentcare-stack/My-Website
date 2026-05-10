@@ -70,8 +70,8 @@ const BlogDetail = () => {
             {blog.excerpt}
           </p>
           <div className="space-y-6 text-slate-700 leading-relaxed text-[17px]" data-testid="blog-body">
-            {(blog.body || []).map((para, i) => (
-              <p key={i}>{para}</p>
+            {(blog.body || []).map((para) => (
+              <p key={para.slice(0, 60)}>{para}</p>
             ))}
           </div>
 
