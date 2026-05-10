@@ -27,8 +27,10 @@ const Blogs = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogs.map((b) => (
-              <article
+              <Link
                 key={b.id}
+                to={`/blog/${b.id}`}
+                data-testid={`blog-card-${b.id}`}
                 className="group bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="aspect-[4/3] overflow-hidden">
@@ -57,7 +59,7 @@ const Blogs = () => {
                     />
                   </div>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
 

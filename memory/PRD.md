@@ -42,12 +42,14 @@ Pixel-perfect frontend clone of `https://www.kalradentalclinic.com/` rebranded f
 - Visiting consultant photos sized smaller than in-house doctors
 - Removed "Class B Autoclave" and "Spore Testing" copy → replaced with "Hospital Grade Autoclaving"
 - Replaced 5 treatment images (Braces, RCT, Fillings, Gum Surgeries, Cleaning)
-- **2026-02-10 — Merged "Surgical Extractions" + "Teeth Removal" into single "Tooth Extractions" tab** (mock.js services + navItems updated; verified via screenshot at `/service/extraction` and `/general-dentistry`)
+- 2026-02-10 — Merged "Surgical Extractions" + "Teeth Removal" into single "Tooth Extractions" tab
+- **2026-02-10 — Added FAQ accordion to all 19 service detail pages** via `serviceFaqs` map in mock.js + shadcn Accordion in `ServiceDetail.jsx`
+- **2026-02-10 — New blog post + clickable blog detail pages**: added `/blog/:id` route, `BlogDetail.jsx` page, made `Blogs.jsx` cards link out, added "Dentistry in West Bengal" article (first card) plus full body content for 3 existing posts
+- **2026-02-10 — Replaced Tooth Extraction & Wisdom Tooth Surgery hero images** (IMG_0967.jpeg / IMG_0968.jpeg)
 
 ## Roadmap
 ### P1 — Upcoming
 - Replace placeholder wordmarks for remaining brands (3M, Ivoclar, Shofu, Meta Biomed) when transparent PNG logos provided
-- Populate `/blogs` with real articles + cover images
 
 ### P2 — Future / Backlog
 - Migrate `mock.js` content to MongoDB + admin panel for dynamic content management

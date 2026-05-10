@@ -1,7 +1,13 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowRight, Check, ChevronLeft, MessageCircle } from "lucide-react";
-import { services, buildWhatsAppUrl, serviceEnquiryMessage } from "../mock";
+import { services, serviceFaqs, buildWhatsAppUrl, serviceEnquiryMessage } from "../mock";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../components/ui/accordion";
 
 const ServiceDetail = () => {
   const { id } = useParams();
@@ -19,6 +25,7 @@ const ServiceDetail = () => {
   }
 
   const related = services.filter((s) => s.id !== service.id).slice(0, 3);
+  const faqs = serviceFaqs[service.id] || [];
 
   return (
     <div>
@@ -154,6 +161,41 @@ const ServiceDetail = () => {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+      )}
+
+      {faqs.length > 0 && (
+        <section className="py-16 md:py-20 px-6 md:px-12 bg-white border-t border-slate-100">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-10">
+              <div className="text-xs tracking-[0.3em] text-[#1f3a6e] uppercase mb-4">
+                FAQs
+              </div>
+              <h2 className="font-serif text-3xl md:text-4xl text-[#0b1424]">
+                Frequently asked questions
+              </h2>
+              <p className="mt-4 text-slate-600">
+                Quick answers about {service.title.toLowerCase()} at SSDC, Vapi.
+              </p>
+            </div>
+            <Accordion type="single" collapsible className="w-full" data-testid="service-faqs">
+              {faqs.map((f, i) => (
+                <AccordionItem
+                  key={i}
+                  value={`faq-${i}`}
+                  className="border-b border-slate-200"
+                  data-testid={`faq-item-${i}`}
+                >
+                  <AccordionTrigger className="text-left font-serif text-lg text-[#0b1424] hover:no-underline py-5">
+                    {f.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-600 leading-relaxed text-[15px] pb-5">
+                    {f.a}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </section>
       )}

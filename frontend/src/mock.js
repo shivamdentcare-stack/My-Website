@@ -460,7 +460,7 @@ export const services = [
     title: "Tooth Extractions",
     short: "Painless simple & surgical extractions under local anesthesia.",
     image:
-      "https://images.unsplash.com/photo-1643660526741-094639fbe53a?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/ybckay3o_IMG_0967.jpeg",
     description:
       "From simple, atraumatic removals of damaged teeth to surgical extractions of broken-down, impacted or root-stump teeth — all performed under modern local anesthesia with bone-preserving techniques and replacement planning.",
     points: [
@@ -477,7 +477,7 @@ export const services = [
     title: "Wisdom Tooth Surgery",
     short: "Specialist removal of impacted wisdom teeth.",
     image:
-      "https://images.unsplash.com/photo-1643660526741-094639fbe53a?auto=format&fit=crop&w=1000&q=80",
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/ihbmk0xf_IMG_0968.jpeg",
     description:
       "Surgical removal of partially erupted or impacted wisdom teeth that cause pain, infection, swelling or damage to adjacent teeth.",
     points: [
@@ -676,37 +676,77 @@ export const labPartner = {
 
 export const blogs = [
   {
-    id: 1,
+    id: "dentistry-in-west-bengal",
+    title: "Dentistry in West Bengal: A Proud Legacy in Indian Dental History",
+    excerpt:
+      "Beyond the political spotlight, West Bengal — and Kolkata in particular — holds an extraordinary place in the story of Indian dentistry.",
+    image:
+      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80",
+    category: "Dental Heritage",
+    date: "Feb 2026",
+    readTime: "4 min read",
+    body: [
+      "Amid ongoing discussions and widespread attention around the recent elections in West Bengal, it's also important to recognize another important story tied to the state — its remarkable contribution to dentistry and oral healthcare in India.",
+      "West Bengal, especially Kolkata, holds an important place in the history of dentistry in India. Known for its contribution to medical education, Kolkata played a major role in shaping modern dental healthcare in the country.",
+      "One of the biggest milestones in Indian dentistry was the establishment of the first dental college in India in Kolkata, which marked the beginning of organized dental education. This development is often linked with Dr. Fakaruddin Ahmed, widely recognized as the Father of Dentistry, who contributed significantly to the growth of professional dental training in India.",
+      "Over the years, West Bengal has remained a strong hub for dental education and advanced dental treatments. Today, dentistry in Kolkata has evolved with modern technology, offering world-class procedures such as dental implants, cosmetic dentistry, ceramic crowns, veneers, orthodontics, and smile designing.",
+      "West Bengal also plays a key role in spreading awareness about oral hygiene and oral cancer prevention through community healthcare initiatives and dental camps.",
+      "With a rich history and continuous progress, dentistry in West Bengal continues to inspire and lead India's journey toward better oral health and confident smiles.",
+      "Looking for advanced dental care or oral health guidance? Contact our clinic today for expert treatment with a personal touch!",
+    ],
+  },
+  {
+    id: "off-the-shelf-whitening",
     title: "Why off-the-shelf teeth whitening doesn't work",
     excerpt:
       "Thinking of buying a whitening kit from your local pharmacy? Here's why professional whitening delivers better, safer results.",
     image:
-      "https://images.unsplash.com/photo-1654373535457-383a0a4d00f9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1654373535457-383a0a4d00f9?auto=format&fit=crop&w=1200&q=80",
     category: "Cosmetic Dentistry",
     date: "Coming soon",
     readTime: "4 min read",
+    body: [
+      "Walk into any pharmacy and you'll find shelves of whitening strips, pens and rinses promising a Hollywood smile. Most patients are disappointed — and a few end up with sensitive teeth or irritated gums.",
+      "Off-the-shelf kits use weak peroxide concentrations and a one-size-fits-all tray that rarely sits flush against your teeth. The result is uneven whitening, gel leaking onto the gums, and rebound staining within weeks.",
+      "Professional in-clinic whitening uses dental-grade peroxide under controlled exposure, custom trays moulded to your bite, and shade matching against your natural enamel. Results are visible the same day and last months — not days.",
+      "If you're considering whitening, book a consultation. We'll assess your enamel, recommend the right protocol, and walk you through a take-home kit to maintain results safely.",
+    ],
   },
   {
-    id: 2,
+    id: "implants-vs-dentures",
     title: "Dental implants vs. dentures: which is right for you?",
     excerpt:
       "A side-by-side guide to help you understand the pros, cons and long-term costs of both tooth replacement options.",
     image:
-      "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&fit=crop&w=1200&q=80",
     category: "Implants",
     date: "Coming soon",
     readTime: "6 min read",
+    body: [
+      "Missing teeth aren't just a cosmetic issue — they affect chewing, speech, jawbone density and even facial structure over time. The two most common solutions are dental implants and dentures, and they serve very different patients.",
+      "Dental implants are titanium roots fused into the jawbone, topped with a ceramic crown. They feel and function like natural teeth, prevent bone loss, and last decades with basic care. The trade-off is higher upfront cost and a 3–6 month healing window.",
+      "Dentures are removable, faster to deliver and far more affordable. Modern dentures fit better than ever, but they don't stop bone resorption, can slip while eating, and need relining every few years.",
+      "For most patients with one or two missing teeth, implants are the long-term winner. For full-arch cases on a budget, implant-supported overdentures often offer the best of both worlds. A consultation and CBCT scan will tell you which path fits your bone, lifestyle and budget.",
+    ],
   },
   {
-    id: 3,
+    id: "daily-habits-for-smile",
     title: "5 daily habits that protect your smile",
     excerpt:
       "Small, consistent habits that go far beyond brushing — practical tips from our doctors for a healthy mouth.",
     image:
-      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80",
     category: "Oral Health",
     date: "Coming soon",
     readTime: "3 min read",
+    body: [
+      "Most cavities and gum problems are preventable with five simple habits.",
+      "1. Brush twice — gently. Use a soft-bristled brush and fluoride toothpaste for two minutes, morning and night. Aggressive scrubbing wears down enamel and recedes gums.",
+      "2. Floss once a day. A toothbrush only reaches three of the five surfaces of each tooth. Flossing removes the plaque your brush misses.",
+      "3. Rinse after sugary or acidic foods. Don't brush immediately — rinse with water first to neutralise acid, then brush after 30 minutes.",
+      "4. Replace your brush every 3 months. Frayed bristles clean less than half as well as fresh ones.",
+      "5. Visit your dentist every 6 months. Early detection of cavities or gum disease keeps treatment quick, painless and affordable.",
+    ],
   },
 ];
 
@@ -772,3 +812,316 @@ export const navItems = [
   { id: "about", label: "About", path: "/about" },
   { id: "contact", label: "Contact", path: "/contact" },
 ];
+
+
+// FAQs keyed by service id — used on individual treatment pages
+export const serviceFaqs = {
+  veneers: [
+    {
+      q: "Are dental veneers permanent?",
+      a: "Veneers are a long-lasting restoration. Ceramic veneers typically last 10–15 years or more with proper care. The procedure involves minimal enamel reduction, so it is considered semi-permanent.",
+    },
+    {
+      q: "Will my veneers look natural?",
+      a: "Yes. Modern ceramic veneers are custom-shaded to match your facial features, lip line and adjacent teeth. We do a digital smile design preview before finalising the shape and shade so you approve the final look.",
+    },
+    {
+      q: "Is the veneer procedure painful?",
+      a: "No. Veneer prep is minimally invasive and performed under local anesthesia. Most patients report no discomfort during or after the visit.",
+    },
+    {
+      q: "How many sittings does it take?",
+      a: "Typically 2 to 3 visits over 7–10 days — one for design and prep, one for try-in and one for final cementation.",
+    },
+  ],
+  "ceramic-crowns": [
+    {
+      q: "What is the difference between metal and full ceramic crowns?",
+      a: "Metal-ceramic crowns have a metal substructure under porcelain, which can show as a grey line near the gum over time. Full ceramic (zirconia or E-Max) crowns are entirely tooth-coloured and biocompatible — ideal for front teeth.",
+    },
+    {
+      q: "How long do ceramic crowns last?",
+      a: "With routine cleaning and 6-monthly check-ups, full ceramic crowns can last 12–20 years.",
+    },
+    {
+      q: "Can I eat normally with a ceramic crown?",
+      a: "Yes. Zirconia crowns are extremely strong and let you chew naturally. We only advise avoiding extreme habits like chewing ice or opening bottles with teeth.",
+    },
+  ],
+  dsd: [
+    {
+      q: "What exactly is Digital Smile Design?",
+      a: "DSD is a planning protocol where we capture facial photos and 3D scans, then design your future smile pixel-by-pixel on screen. You preview the result before any treatment is started.",
+    },
+    {
+      q: "Can I see a mock-up in my mouth before treatment?",
+      a: "Yes. We can fabricate a temporary trial smile that we place over your existing teeth so you can see and feel the design before committing.",
+    },
+    {
+      q: "Is DSD a treatment or a planning step?",
+      a: "DSD is a planning service. The actual treatment may involve veneers, crowns, whitening or orthodontics — DSD ensures the final outcome is predictable.",
+    },
+  ],
+  whitening: [
+    {
+      q: "How many shades whiter will my teeth get?",
+      a: "On average, professional whitening lifts teeth by 4 to 8 shades in a single session. Results vary based on starting shade, age and the type of staining.",
+    },
+    {
+      q: "Will whitening damage my enamel?",
+      a: "No. Clinical whitening uses controlled-strength peroxide and is safe on enamel when performed by a dentist. Over-the-counter kits are riskier because of misuse and ill-fitting trays.",
+    },
+    {
+      q: "How long do the results last?",
+      a: "Typically 12–18 months, depending on diet (coffee, tea, tobacco), oral hygiene and follow-up touch-ups.",
+    },
+    {
+      q: "Will my teeth feel sensitive after whitening?",
+      a: "Mild sensitivity for 24–48 hours is common and settles on its own. We provide a desensitising paste to use during this period.",
+    },
+  ],
+  "gum-contouring": [
+    {
+      q: "Is gum contouring painful?",
+      a: "No. The procedure is performed under local anesthesia and laser, so there is little to no bleeding or post-op discomfort.",
+    },
+    {
+      q: "How long does it take to heal?",
+      a: "Soft tissue healing is rapid — most patients are back to normal eating within 3–5 days.",
+    },
+    {
+      q: "Will the gums grow back?",
+      a: "When done correctly with proper case selection, the contoured gum line is stable long-term.",
+    },
+  ],
+  "single-implant": [
+    {
+      q: "How long does the entire implant treatment take?",
+      a: "From implant placement to the final crown, the timeline is typically 3–6 months. In selected cases, immediate-loading implants allow a temporary crown the same day.",
+    },
+    {
+      q: "Is the implant procedure painful?",
+      a: "No. Implant placement is performed under local anesthesia. Most patients describe it as easier than a tooth extraction. Mild swelling for 2–3 days is normal.",
+    },
+    {
+      q: "How long do dental implants last?",
+      a: "With good oral hygiene and 6-monthly check-ups, implants are designed to last a lifetime. Crowns on top of implants may need replacement after 10–15 years.",
+    },
+    {
+      q: "Am I eligible for an implant?",
+      a: "Most adults with adequate jawbone are eligible. We do a CBCT scan during the consultation to assess bone volume, density and proximity to nerves.",
+    },
+  ],
+  "multiple-implant": [
+    {
+      q: "Do I need one implant per missing tooth?",
+      a: "Not necessarily. For two or three adjacent missing teeth, two strategically placed implants can support a bridge — saving cost and surgery.",
+    },
+    {
+      q: "Is the bridge removable?",
+      a: "No. Implant-supported bridges are fixed and cleaned like natural teeth.",
+    },
+    {
+      q: "Will I lose more bone over time?",
+      a: "Implants act like natural roots and stimulate the jawbone, preventing the bone resorption that normally follows tooth loss.",
+    },
+  ],
+  "full-mouth-implants": [
+    {
+      q: "What is the All-on-4 / All-on-6 protocol?",
+      a: "It is a full-arch restoration where 4 (or 6) implants strategically support a fixed set of 12–14 teeth — replacing an entire upper or lower jaw.",
+    },
+    {
+      q: "Will I get teeth on the same day?",
+      a: "In selected cases yes — a temporary fixed set of teeth is placed within 24–72 hours. The final ceramic prosthesis is delivered after 3–4 months of healing.",
+    },
+    {
+      q: "Is full mouth implant treatment painful?",
+      a: "Surgery is performed under local anesthesia (and sedation if requested). Post-op discomfort is mild and managed with simple medication.",
+    },
+  ],
+  "basal-implants": [
+    {
+      q: "How are basal implants different from regular implants?",
+      a: "Basal implants engage the dense cortical bone of the jaw, allowing immediate loading and avoiding bone grafting in many cases of severe bone loss.",
+    },
+    {
+      q: "Can I get fixed teeth in 72 hours?",
+      a: "Yes — in eligible cases, basal implants allow a fixed prosthesis to be delivered within 72 hours of surgery.",
+    },
+    {
+      q: "Who should I see for basal implants?",
+      a: "Basal implants are placed by our visiting maxillofacial surgeon Dr. Aroon K. Bengani at SSDC.",
+    },
+  ],
+  "complete-dentures": [
+    {
+      q: "How long does it take to make complete dentures?",
+      a: "Typically 4–5 visits over 2–3 weeks, including impressions, jaw relation, try-in and final delivery.",
+    },
+    {
+      q: "Will my dentures feel loose while eating?",
+      a: "Well-fitted complete dentures are stable for most patients. If looseness becomes an issue, we can convert them into implant-retained overdentures.",
+    },
+    {
+      q: "How do I take care of my dentures?",
+      a: "Clean them daily with a soft brush and denture cleanser, soak overnight in water, and visit us yearly for relining or adjustment.",
+    },
+  ],
+  "over-dentures": [
+    {
+      q: "How many implants do I need for an overdenture?",
+      a: "Usually 2 implants for a lower overdenture and 4 for an upper. The denture clips on to the implants and is removable for cleaning.",
+    },
+    {
+      q: "Is it more comfortable than a regular denture?",
+      a: "Significantly. Overdentures don't slip, allow stronger biting force, and preserve jawbone better than conventional dentures.",
+    },
+    {
+      q: "Are overdentures fixed or removable?",
+      a: "Removable by the patient for cleaning, but locked in place during use — combining the comfort of fixed teeth with easy hygiene.",
+    },
+  ],
+  "cast-partial-dentures": [
+    {
+      q: "How is a cast partial denture different from acrylic?",
+      a: "Cast partials use a slim metal framework that grips natural teeth precisely — they are stronger, thinner and more durable than acrylic partials.",
+    },
+    {
+      q: "Will the metal clasps show when I smile?",
+      a: "We design the framework so clasps sit on back teeth wherever possible. For aesthetic zones, we offer flexible or precision-attachment options.",
+    },
+    {
+      q: "How long do cast partial dentures last?",
+      a: "Typically 7–10 years with good hygiene. Adjustments may be needed if adjacent teeth change position.",
+    },
+  ],
+  "metal-ceramic-braces": [
+    {
+      q: "How long does braces treatment take?",
+      a: "Most cases finish in 12–24 months. Mild crowding can be corrected in under a year, while complex bite issues may take 2 years or more.",
+    },
+    {
+      q: "Are ceramic braces as effective as metal?",
+      a: "Yes. Ceramic brackets work the same way as metal but are tooth-coloured, making them less visible. They cost slightly more.",
+    },
+    {
+      q: "Will braces hurt?",
+      a: "Mild soreness for 2–3 days after each adjustment is normal and manageable with simple painkillers.",
+    },
+    {
+      q: "Do I need to come in often?",
+      a: "Adjustments are scheduled every 4–6 weeks with our visiting orthodontist.",
+    },
+  ],
+  aligners: [
+    {
+      q: "Are aligners as effective as braces?",
+      a: "For mild to moderate misalignment, clear aligners deliver comparable results to braces — and they are virtually invisible and removable.",
+    },
+    {
+      q: "How long do I have to wear them every day?",
+      a: "22 hours a day. You only remove them while eating, drinking anything other than water, or brushing.",
+    },
+    {
+      q: "How long does aligner treatment take?",
+      a: "Most cases complete in 6–18 months depending on complexity. We use a digital plan to predict the timeline upfront.",
+    },
+  ],
+  rct: [
+    {
+      q: "Is root canal treatment painful?",
+      a: "Modern rotary RCT is virtually painless. The procedure is done under local anesthesia, and patients typically describe it as similar to getting a filling.",
+    },
+    {
+      q: "Can it be done in a single visit?",
+      a: "Yes — most uncomplicated cases are completed in a single 60–90 minute session using rotary endodontics.",
+    },
+    {
+      q: "Will I need a crown after RCT?",
+      a: "In most back teeth, yes. A ceramic crown protects the weakened tooth from fracture and extends its lifespan significantly.",
+    },
+    {
+      q: "How long does an RCT-treated tooth last?",
+      a: "When properly restored with a crown, an RCT tooth can last a lifetime.",
+    },
+  ],
+  filling: [
+    {
+      q: "How long does a tooth-coloured filling last?",
+      a: "Composite fillings typically last 7–10 years with good oral hygiene. Larger fillings may eventually need replacement with onlays or crowns.",
+    },
+    {
+      q: "Are tooth-coloured fillings as strong as silver fillings?",
+      a: "Modern light-cure composites bond chemically to the tooth and are highly durable. They are the standard of care today and we no longer place silver amalgam fillings.",
+    },
+    {
+      q: "Will I feel pain during the procedure?",
+      a: "Most fillings need no anesthesia for shallow cavities. Deeper cavities are done painlessly under local anesthesia.",
+    },
+  ],
+  cleaning: [
+    {
+      q: "How often should I get a professional cleaning?",
+      a: "Every 6 months for most adults. Patients with gum disease or implants may need 3–4 monthly maintenance.",
+    },
+    {
+      q: "Will scaling damage my teeth or loosen them?",
+      a: "No. Scaling removes tartar that was already weakening your gum support. Teeth may feel slightly mobile for a day or two as inflammation settles.",
+    },
+    {
+      q: "Will my teeth become whiter after cleaning?",
+      a: "Cleaning removes surface stains and restores your natural shade. For a lighter shade than natural, you'll need professional whitening.",
+    },
+  ],
+  "gum-surgery": [
+    {
+      q: "When is gum surgery actually needed?",
+      a: "When deep pockets (>5mm), bone loss or gum recession cannot be controlled with scaling and oral hygiene alone.",
+    },
+    {
+      q: "Is gum surgery painful?",
+      a: "The procedure is done under local anesthesia. Mild soreness and swelling for 3–5 days is common and managed with medication.",
+    },
+    {
+      q: "Will my gums grow back after surgery?",
+      a: "Gum grafting can recover lost tissue in localised areas. Bone regeneration is also possible with grafts in selected cases.",
+    },
+  ],
+  extraction: [
+    {
+      q: "Is tooth extraction painful?",
+      a: "No. Extractions are performed under modern local anesthesia, so you feel pressure but no sharp pain. Mild post-op soreness is normal for 1–2 days.",
+    },
+    {
+      q: "How long does the procedure take?",
+      a: "Simple extractions take 10–15 minutes. Surgical extractions of broken or root-stump teeth take 30–60 minutes.",
+    },
+    {
+      q: "How long is the recovery period?",
+      a: "Most patients return to normal activity within 24 hours. Full socket healing takes 2–4 weeks. We give clear post-op care instructions and contact details.",
+    },
+    {
+      q: "What about replacing the missing tooth?",
+      a: "We discuss replacement options — implant, bridge or denture — at the same visit so you can plan ahead. Where possible, we preserve the socket bone for future implant placement.",
+    },
+  ],
+  "wisdom-tooth": [
+    {
+      q: "Should I get my wisdom teeth removed even if they don't hurt?",
+      a: "If they are impacted or angular, they often damage adjacent teeth or trap food and infection over time. We do a 3D CBCT scan to recommend whether removal is preventive or can wait.",
+    },
+    {
+      q: "Is wisdom tooth surgery painful?",
+      a: "The procedure is done under local anesthesia and is painless. Some swelling for 3–4 days is common; we follow a minimal-swelling protocol with cold packs and medication.",
+    },
+    {
+      q: "How long does recovery take?",
+      a: "Most patients return to work within 2–3 days. Full healing takes 2 weeks. Stitches (if used) are typically removed at day 7.",
+    },
+    {
+      q: "Are all four wisdom teeth removed together?",
+      a: "Depending on the case, we either remove one side per visit (more comfortable for patients) or all four under sedation in a single appointment.",
+    },
+  ],
+};
