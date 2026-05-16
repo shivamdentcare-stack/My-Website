@@ -70,10 +70,32 @@ const BlogDetail = () => {
             {blog.excerpt}
           </p>
           <div className="space-y-6 text-slate-700 leading-relaxed text-[17px]" data-testid="blog-body">
-            {(blog.body || []).map((para) => (
-              <p key={para.slice(0, 60)}>{para}</p>
-            ))}
+            {(blog.body || []).map((item, i) => {
+              if (typeof item === "object" && item.heading) {
+                return (
+                  <h2
+                    key={`h-${item.heading}`}
+                    className="font-serif text-2xl md:text-3xl text-[#0b1424] !mt-12 mb-2"
+                  >
+                    {item.heading}
+                  </h2>
+                );
+              }
+              return <p key={`p-${i}-${item.slice(0, 40)}`}>{item}</p>;
+            })}
           </div>
+
+          {blog.author && (
+            <div
+              className="mt-10 pt-6 border-t border-slate-200 text-sm text-slate-600"
+              data-testid="blog-author"
+            >
+              <span className="text-slate-500">Author · </span>
+              <span className="font-serif text-base text-[#0b1424]">
+                {blog.author}
+              </span>
+            </div>
+          )}
 
           {/* CTA */}
           <div className="mt-14 bg-[#f7f9fc] border border-slate-200 rounded-2xl p-8">

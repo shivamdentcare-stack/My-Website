@@ -676,6 +676,41 @@ export const labPartner = {
 
 export const blogs = [
   {
+    id: "neet-pg-centralized-vs-decentralized",
+    title: "NEET PG: The Centralization vs Decentralization Debate",
+    excerpt:
+      "A practising dentist's perspective on how India's medical and dental entrance system has evolved — and what the recent paper-leak controversy tells us about the trade-offs.",
+    image:
+      "https://customer-assets.emergentagent.com/job_dental-care-hub-84/artifacts/lwt01on1_NEET%20and%20SC_0.jpeg",
+    category: "Opinion · Medical Education",
+    date: "Feb 2026",
+    readTime: "5 min read",
+    author: "Dr. Parashar Desai",
+    body: [
+      "Nowadays, one of the most trending and widely discussed topics is the NEET PG examination. Let us talk about the same in this blog.",
+      "As a dentist, and like many of my juniors who are now qualified dentists, we have all gone through entrance examinations — NEET PG and NEET UG being the current standard. However, during our time, NEET did not exist for either UG or PG admissions. It was introduced later.",
+      "The main difference between NEET and the admission pattern that existed earlier is the concept of centralization versus decentralization.",
+      "NEET, as we all know, is a centralized examination, conducted by a single authority. On the other hand, during our time, there were multiple entrance examinations. We had national-level exams such as AIPMT for undergraduate admissions and AIPGDEE (All India Post Graduate Dental Entrance Examination) for postgraduate courses. Along with these centralized exams, there were several state-level entrance tests as well. For example, Gujarat had Gujarat CET, Maharashtra had Maharashtra CET, Karnataka had COMEDK, and many others.",
+      "Since these exams were conducted independently, candidates had the opportunity to appear for multiple exams and increase their chances of securing admission.",
+      "Now, both systems — NEET and the old pattern — had their own advantages and disadvantages. Let us discuss them.",
+      { heading: "Advantages of NEET (Centralized Pattern)" },
+      "The biggest advantage of NEET is that it is a single examination, so students do not have to divide their focus across multiple entrance tests. It also ensures a standardized evaluation system, giving students the opportunity to apply across India at the same time and explore multiple options nationwide.",
+      "Another important advantage is that even seats under the management quota are required to be filled through NEET merit, ensuring more transparency. This has significantly reduced corruption and unfair admission practices in many institutions.",
+      { heading: "Advantages of the Old Pattern (Decentralized Multiple Exams)" },
+      "The old system of multiple exams also had certain benefits. Since entrance tests were state-based, students had better chances of getting admission within their own state, allowing them to study closer to home. It also reduced the burden of relocation and financial stress for many students.",
+      "Additionally, if a candidate did not perform well in one exam, they still had the opportunity to secure admission through another exam. In a way, students had multiple chances to prove themselves.",
+      "Different states also had their own independent rules for seat allotment, which in some cases benefited local students.",
+      { heading: "Paper Leak Issue: Centralized vs Decentralized" },
+      "Now coming to the recent concern of paper leaks — this is where centralization becomes a major issue. When there is only one national-level exam and its paper gets leaked, the impact is massive. Students across the entire country suffer, and re-examinations affect lakhs of candidates.",
+      "In a decentralized system, even though paper leaks are equally wrong and unacceptable, the damage would be limited to the candidates appearing for that particular exam, rather than affecting the entire nation at once.",
+      { heading: "Conclusion" },
+      "To conclude, both systems have their strengths and weaknesses. NEET offers uniformity and transparency, while the older decentralized system offered flexibility and multiple opportunities.",
+      "Finding the perfect balance between these two patterns is not easy. However, what is most important is that strict action must be taken against those involved in paper leaks, because such incidents destroy the trust and future of hardworking students.",
+      "I hope the government continues to work seriously on this issue and ensures that examinations remain fair, secure, and corruption-free.",
+      "Thank you.",
+    ],
+  },
+  {
     id: "dentistry-in-west-bengal",
     title: "Dentistry in West Bengal: A Proud Legacy in Indian Dental History",
     excerpt:
